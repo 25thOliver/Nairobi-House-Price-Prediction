@@ -1,8 +1,8 @@
 # Basic property scraper for Nairobi listings
 
-import pandas as pandas
+import pandas as pd
 import re
-from typing import List, dict, Optional
+from typing import List, Dict, Optional
 from datetime import datetime
 from bs4 import BeautifulSoup
 from scrapers.base_scraper import BaseScraper
