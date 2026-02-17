@@ -1,4 +1,4 @@
-# 🏠 Nairobi House Price Prediction
+# Nairobi House Price Prediction
 
 ## Project Overview
 
@@ -165,7 +165,7 @@ The scraper uses a modular architecture:
 - [x] Clean GitHub repository
 - [x] Docker environment
 - [x] Multi-source web scraper
-- [x] Raw dataset (628 listings - **Target exceeded!**)
+- [x] Raw dataset (628 listings)
 - [x] Data dictionary
 - [x] README documentation
 
