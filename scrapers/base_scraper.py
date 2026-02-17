@@ -6,7 +6,7 @@ from typing import List, Dict, Optional
 from abc import ABC, abstractmethod
 import requests
 from bs4 import BeautifulSoup
-from fake_useragent import fake_useragent
+from fake_useragent import UserAgent
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
