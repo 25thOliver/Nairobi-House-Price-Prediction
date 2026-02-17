@@ -1,6 +1,5 @@
 FROM python:3.11-slim
 
-# Set working directory
 WORKDIR /app
 
 # Install system dependencies
@@ -18,18 +17,14 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
     && apt-get install -y google-chrome-stable \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements and install Python dependencies
+# Copy and install Python dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy project files
 COPY . .
 
-# Create necessary directories
-RUN mkdir -p data notebooks app dashboard
+# Create data directory
+RUN mkdir -p data
 
-# Expose ports for Jupyter and Streamlit
-EXPOSE 8888 8501
-
-# Default command (can be overridden in docker-compose)
 CMD ["bash"]
