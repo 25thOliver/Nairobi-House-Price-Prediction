@@ -75,3 +75,23 @@ class PropertyScraper(BaseScraper):
         df.to_csv(filepath, index=False)
         logger.info(f"Saved {len(listings)} listings to {filepath}")
         return df
+
+    def main():
+        # Main scraping workflow
+
+        scraper = PropertyScraper('https://www.property24.co.ke', delay=2)
+
+        # Collect listings
+        listings  = scraper.scrape_listings(max_pages=5)
+
+        # Save to CSV
+        if listings:
+            df = scraper.save_to_csv(listings)
+            print(f"\nCollected {len(listings)} listings")
+            print(f"\nPreview:\n{df.head()}")
+        else:
+            print("No listings collected. Update the scraper selectors")
+    
+
+    if __name__ == "__main__":
+        main()
