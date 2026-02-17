@@ -67,3 +67,11 @@ class PropertyScraper(BaseScraper):
         except Exception as e:
             logger.error(f"Error parsing listing: {str(e)}")
             return None
+
+    
+    def save_to_csv(slef, listings: List[Dict], filepath: str = 'data/raw_listings.csv'):
+        # Save listing to CSV
+        df = pd.DataFrame(listings)
+        df.to_csv(filepath, index=False)
+        logger.info(f"Saved {len(listings)} listings to {filepath}")
+        return df
