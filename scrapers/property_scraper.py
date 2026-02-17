@@ -5,7 +5,7 @@ import re
 from typing import List, Dict, Optional
 from datetime import datetime
 from bs4 import BeautifulSoup
-from scrapers.base_scraper import BaseScraper
+from .base_scraper import BaseScraper
 import logging
 
 logger = logging.getLogger(__name__)
@@ -76,7 +76,7 @@ class PropertyScraper(BaseScraper):
         logger.info(f"Saved {len(listings)} listings to {filepath}")
         return df
 
-    def main():
+def main():
         # Main scraping workflow
 
         scraper = PropertyScraper('https://www.property24.co.ke', delay=2)
@@ -93,5 +93,5 @@ class PropertyScraper(BaseScraper):
             print("No listings collected. Update the scraper selectors")
     
 
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    main()
