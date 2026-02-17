@@ -1,4 +1,4 @@
-# Base scraper with common functionality
+"""Base scraper with common functionality"""
 
 import time
 import logging
@@ -11,8 +11,9 @@ from fake_useragent import UserAgent
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
 class BaseScraper(ABC):
-    # Base class for property scrapers
+    """Base class for property scrapers"""
 
     def __init__(self, delay: int = 2, max_retries: int = 3):
         self.delay = delay
@@ -21,8 +22,8 @@ class BaseScraper(ABC):
         self.session = requests.Session()
 
     def get_headers(self) -> Dict[str, str]:
-        # Generate random headers
-        return{
+        """Generate random headers"""
+        return {
             'User-Agent': self.ua.random,
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
             'Accept-Language': 'en-US,en;q=0.5',
@@ -30,7 +31,7 @@ class BaseScraper(ABC):
         }   
 
     def fetch_page(self, url: str) -> Optional[str]:
-        # Fetch page content with retry logic
+        """Fetch page content with retry logic"""
         for attempt in range(self.max_retries):
             try:
                 response = self.session.get(
@@ -53,5 +54,5 @@ class BaseScraper(ABC):
 
     @abstractmethod
     def scrape_listings(self, max_pages: int = 10) -> List[Dict]:
-        # Scrape property listings  implement in subclass
+        """Scrape property listings - implement in subclass"""
         pass
