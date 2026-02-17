@@ -1,0 +1,14 @@
+services:
+  scraper:
+    build: .
+    container_name: nairobi_scraper
+    volumes:
+      - ./data:/app/data
+      - ./scrapers:/app/scrapers
+    environment:
+      - PYTHONUNBUFFERED=1
+    env_file:
+      - .env
+    stdin_open: true
+    tty: true
+    command: bash
