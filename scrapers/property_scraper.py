@@ -45,4 +45,25 @@ class PropertyScraper(BaseScraper):
 
         return all_listings
 
-            
+
+    def parse_listing(self, element) -> Optional[Dict]:
+        # Parse indivdual listing: customized based on website structure
+        try:
+            # TODO: Customize these selectors
+            listing = {
+                'location': '',
+                'property_type': '',
+                'bedrooms': 0,
+                'bathrooms': 0,
+                'size_sqft': 0.0,
+                'amenities': '',
+                'price_kes': 0.0,
+                'listing_date': datetime.now().strftime('%Y-%m-%d'),
+                'source': self.base_url
+            }
+
+            return listing if listing['price_kes'] > 0 else None
+
+        except Exception as e:
+            logger.error(f"Error parsing listing: {str(e)}")
+            return None
