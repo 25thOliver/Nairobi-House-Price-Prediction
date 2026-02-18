@@ -1,24 +1,16 @@
 # Nairobi House Price Prediction
 
-## Project Overview
-
-This project predicts house prices in Nairobi, Kenya using machine learning. Built as part of the **LTLab Fellowship 6-Day Intensive Sprint**, it simulates a real startup execution cycle.
-
-### Objectives
-- Collect 300-800 Nairobi property listings via web scraping
-- Build and train ML models (Linear Regression, Random Forest, XGBoost)
-- Deploy a working price prediction app
-- Create a market insights dashboard
-- Deliver professional presentation
+A prop-tech MVP built in a 6-day intensive sprint — from raw data to a deployed pricing app.
+Built as part of the **LTLab Fellowship 6-Day Intensive Sprint**.
 
 ---
 
-## Sprint Timeline
+## Sprint Progress
 
 | Day | Focus | Status |
 |-----|-------|--------|
-| **Day 1** | Data Collection & Structuring | **Complete** |
-| **Day 2** | Data Cleaning & Feature Engineering | ending |
+| **Day 1** | Data Collection & Structuring | ✅ Complete |
+| **Day 2** | Data Cleaning & Feature Engineering | ✅ Complete |
 | **Day 3** | EDA & Baseline Model | Pending |
 | **Day 4** | Model Improvement & Explainability | Pending |
 | **Day 5** | Pricing App Deployment | Pending |
@@ -30,143 +22,105 @@ This project predicts house prices in Nairobi, Kenya using machine learning. Bui
 
 ```
 NairobiHousePred/
-├── docker-compose.yml          # Docker orchestration
-├── Dockerfile                  # Container configuration
-├── requirements.txt            # Python dependencies
-├── README.md                   # This file
-├── .env                        # Environment variables
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
 ├── data/
-│   ├── raw_listings.csv       # Scraped data (628 listings)
-│   └── data_dictionary.md     # Data documentation
-└── scrapers/
-    ├── __init__.py
-    ├── base_scraper.py        # Base scraper class
-    ├── jiji_scraper.py        # Jiji.co.ke multi-category scraper
-    └── multi_source_scraper.py # Multi-source aggregator
+│   ├── raw_listings.csv        # 628 scraped listings
+│   ├── clean_listings.csv      # Cleaned & feature-engineered dataset
+│   ├── data_dictionary.md      # Column definitions & statistics
+│   └── eda_visuals.png         # EDA charts
+├── scrapers/
+│   ├── base_scraper.py         # Base class with retry logic
+│   ├── jiji_scraper.py         # Jiji.co.ke multi-category scraper
+│   └── multi_source_scraper.py # Aggregator (extensible to more sites)
+└── notebooks/
+    └── 01_data_cleaning.ipynb  # Cleaning & feature engineering
 ```
 
 ---
 
 ## Quick Start
 
-### Prerequisites
-- Docker & Docker Compose
-- Git
-
-### Setup & Run
-
 ```bash
-# Clone repository
+# Clone & build
 git clone https://github.com/25thOliver/Nairobi-House-Price-Prediction.git
 cd NairobiHousePred
+docker-compose build && docker-compose up -d
 
-# Build and start Docker container
-docker-compose build
-docker-compose up -d
-
-# Access container
+# Enter container
 docker-compose exec scraper bash
 
-# Run multi-source scraper
+# Collect data (Day 1)
 python -m scrapers.multi_source_scraper
+
+# Launch Jupyter (Day 2)
+jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token=''
+# Open: http://localhost:8888
 ```
 
 ---
 
-## Day 1 Results
+## Day 1 — Data Collection
 
-### Data Collection Summary
-- **Total Listings Scraped:** 705
-- **Unique Listings (after deduplication):** 628
-- **Source:** Jiji.co.ke
-- **Categories:** Houses & Apartments + Land & Plots
-- **Pages Scraped:** 30 pages (20 from houses, 10 from land)
-
-### Dataset Statistics
+**Source:** Jiji.co.ke (Houses & Apartments + Land & Plots)
 
 | Metric | Value |
 |--------|-------|
-| **Total Records** | 628 |
-| **Price Range** | 370K - 15.5B KES |
-| **Mean Price** | 506.5M KES |
-| **Median Price** | 130M KES |
-| **Locations Covered** | 25+ Nairobi neighborhoods |
-| **Property Types** | 10 types |
+| Total scraped | 705 listings |
+| After deduplication | **628 unique listings** |
+| Price range | 370K – 15.5B KES |
+| Median price | 130M KES |
+| Locations | 25+ Nairobi neighborhoods |
+| Property types | 10 types |
 
-### Top 10 Locations
-1. Nairobi (General) - 177 listings
-2. Nairobi Central - 61 listings
-3. Westlands - 60 listings
-4. Kasarani - 40 listings
-5. Kilimani - 39 listings
-6. Kileleshwa - 33 listings
-7. Kahawa - 32 listings
-8. Utawala - 31 listings
-9. Lavington - 30 listings
-10. Karen - 22 listings
+**Scraping Architecture:**
+- `base_scraper.py` — HTTP handling, retry logic (3 attempts), user-agent rotation, 2s rate limiting
+- `jiji_scraper.py` — Multi-category scraping, regex extraction, URL-based deduplication
+- `multi_source_scraper.py` — Aggregates sources, removes duplicates by (price, location, bedrooms, type)
 
-### Property Type Distribution
-- Apartment: 180 (28.7%)
-- Other: 161 (25.6%)
-- Plot: 108 (17.2%)
-- Maisonette: 55 (8.8%)
-- House: 35 (5.6%)
-- Land: 26 (4.1%)
-- Mansion: 21 (3.3%)
-- Villa: 17 (2.7%)
-- Bungalow: 13 (2.1%)
-- Townhouse: 12 (1.9%)
+---
+
+## Day 2 — Data Cleaning & Feature Engineering
+
+**Notebook:** `notebooks/01_data_cleaning.ipynb`
+
+**Cleaning steps:**
+- Removed duplicates
+- Replaced missing `size_sqft` (0.0 → NaN → median imputation per property type)
+- Standardized location names (e.g. `Nairobi Central` → `Nairobi CBD`)
+- Reclassified `Other` property types using bedrooms & size heuristics
+- Removed price outliers using IQR method (5th–95th percentile)
+
+**New features created:**
+
+| Feature | Description |
+|---------|-------------|
+| `price_per_sqft` | Price ÷ size |
+| `amenity_score` | Count of amenities (0–9) |
+| `month` | Extracted from listing date |
+| `has_parking`, `has_pool`, `has_gym`, `has_security`, `has_garden` | Boolean amenity flags |
+| `is_land` | True if Plot or Land |
+
+**Output:** `data/clean_listings.csv` + `data/eda_visuals.png`
 
 ---
 
 ## Tech Stack
 
-- **Language:** Python 3.11
-- **Web Scraping:** BeautifulSoup4, Requests, Selenium
-- **Data Processing:** Pandas, NumPy
-- **Containerization:** Docker, Docker Compose
-- **Version Control:** Git, GitHub
+| Layer | Tools |
+|-------|-------|
+| Language | Python 3.11 |
+| Scraping | BeautifulSoup4, Requests |
+| Data | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
+| Notebooks | Jupyter |
+| Container | Docker, Docker Compose |
+| Version Control | Git, GitHub |
 
 ---
 
-## Scraping Architecture
+## Author
 
-### Multi-Source Strategy
-The scraper uses a modular architecture:
-
-1. **Base Scraper** (`base_scraper.py`)
-   - Common HTTP request handling
-   - Retry logic with exponential backoff
-   - User-agent rotation
-   - Rate limiting (2-second delay)
-
-2. **Jiji Scraper** (`jiji_scraper.py`)
-   - Multi-category support
-   - Regex-based data extraction
-   - Automatic pagination
-   - Duplicate detection via URL tracking
-
-3. **Multi-Source Aggregator** (`multi_source_scraper.py`)
-   - Combines data from multiple sources
-   - Deduplication based on (price, location, bedrooms, type)
-   - Extensible for additional websites
-
-### Data Quality Features
-- Automatic retry on failed requests (3 attempts)
-- Duplicate removal (77 duplicates removed)
-- Missing value handling
-- Data type validation
-- Respectful scraping with delays
-
----
-
-## Day 1 Deliverables
-
-- [x] Clean GitHub repository
-- [x] Docker environment
-- [x] Multi-source web scraper
-- [x] Raw dataset (628 listings)
-- [x] Data dictionary
-- [x] README documentation
-
----
+**Oliver** — LTLab Fellowship, Cohort 2026
+GitHub: [@25thOliver](https://github.com/25thOliver)
