@@ -1,0 +1,615 @@
+location,property_type,bedrooms,bathrooms,size_sqft,amenities,amenity_score,has_parking,has_pool,has_gym,has_security,has_garden,price_kes,price_per_sqft,listing_date,month,month_name,is_land,source
+Kileleshwa,Apartment,1,1,1614.6,None,0,0,0,0,0,0,57000001.0,35302.86,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,3,2,1614.6,None,0,0,0,0,0,0,108000003.0,66889.63,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,3,2,1614.6,Garden,1,0,0,0,0,1,145000003.0,89805.53,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,45208.8,None,0,0,0,0,0,0,1500000002.0,33179.38,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,45208.8,None,0,0,0,0,0,0,1500000001.0,33179.38,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,333.68,None,0,0,0,0,0,0,35000001.0,104890.92,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,House,4,3,2691.0,None,0,0,0,0,0,0,250000004.0,92902.27,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Apartment,3,2,1614.6,None,0,0,0,0,0,0,165000003.0,102192.5,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,3,2,1937.52,"Pool, Gym",2,0,1,1,0,0,230000003.0,118708.45,2026-02-17,2,February,0,jiji.co.ke
+Kitisuru,Villa,3,2,2421.9,None,0,0,0,0,0,0,120000003.0,49547.88,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,650000001.0,18870.77,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,3,2,1614.6,None,0,0,0,0,0,0,150000003.0,92902.27,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,3,2,968.76,None,0,0,0,0,0,0,50000003.0,51612.37,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,3,2,1722.24,None,0,0,0,0,0,0,155000003.0,89999.07,2026-02-17,2,February,0,jiji.co.ke
+Parklands,House,4,3,5382.0,None,0,0,0,0,0,0,490000004.0,91044.22,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,3,2,1614.6,Parking,1,1,0,0,0,0,220000003.0,136256.66,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,53820.0,None,0,0,0,0,0,0,25000001.0,464.51,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,House,3,2,2701.76,Balcony,1,0,0,0,0,0,350000003.0,129545.19,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Apartment,0,1,376.74,None,0,0,0,0,0,0,2700000.0,7166.75,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,53820.0,Gym,1,0,0,1,0,0,108000002.0,2006.69,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,4,3,2475.72,None,0,0,0,0,0,0,230000004.0,92902.27,2026-02-17,2,February,0,jiji.co.ke
+Karen,Maisonette,8,7,6458.4,None,0,0,0,0,0,0,2000000008.0,309674.22,2026-02-17,2,February,0,jiji.co.ke
+Embakasi,Apartment,3,2,1614.6,None,0,0,0,0,0,0,70000003.0,43354.39,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,House,3,2,4843.8,None,0,0,0,0,0,0,70000003.0,14451.46,2026-02-17,2,February,0,jiji.co.ke
+Embakasi,Bungalow,4,3,4843.8,None,0,0,0,0,0,0,200000004.0,41289.9,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,1,1,592.02,"Pool, Gym",2,0,1,1,0,0,58000001.0,97969.66,2026-02-17,2,February,0,jiji.co.ke
+Karen,Maisonette,5,4,2152.8,Parking,1,1,0,0,0,0,950000005.0,441285.77,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Villa,4,3,5844.85,None,0,0,0,0,0,0,800000004.0,136872.63,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Villa,5,4,4843.8,Terrace,1,0,0,0,0,0,750000005.0,154837.11,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,House,3,2,9687.6,None,0,0,0,0,0,0,100000003.0,10322.47,2026-02-17,2,February,0,jiji.co.ke
+South B,Maisonette,4,3,4972.969999999999,None,0,0,0,0,0,0,175000004.0,35190.24,2026-02-17,2,February,0,jiji.co.ke
+Embakasi,Apartment,1,1,5382.0,None,0,0,0,0,0,0,700000001.0,130063.17,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Villa,5,4,3767.4,None,0,0,0,0,0,0,550000005.0,145989.28,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,1,1,753.48,None,0,0,0,0,0,0,45000001.0,59722.89,2026-02-17,2,February,0,jiji.co.ke
+Runda,House,6,5,6458.4,None,0,0,0,0,0,0,1100000006.0,170320.82,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,1,1,269.1,None,0,0,0,0,0,0,23300001.0,86584.92,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,3,2,1614.6,Lift,1,0,0,0,0,0,138000003.0,85470.09,2026-02-17,2,February,0,jiji.co.ke
+Langata,House,4,3,28524.6,None,0,0,0,0,0,0,359000004.0,12585.63,2026-02-17,2,February,0,jiji.co.ke
+South B,House,4,3,2691.0,None,0,0,0,0,0,0,250000004.0,92902.27,2026-02-17,2,February,0,jiji.co.ke
+Lavington,House,4,3,2518.78,None,0,0,0,0,0,0,800000004.0,317614.08,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Maisonette,4,3,2798.64,Terrace,1,0,0,0,0,0,159000004.0,56813.31,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,20,19,8611.2,None,0,0,0,0,0,0,3500000020.0,406447.42,2026-02-17,2,February,0,jiji.co.ke
+Upperhill,Apartment,1,1,861.12,None,0,0,0,0,0,0,79000001.0,91740.99,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Plot,0,1,43917.12,None,0,0,0,0,0,0,55000000.0,1252.36,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,House,4,3,5382.0,None,0,0,0,0,0,0,150000004.0,27870.68,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,3,2,1270.15,None,0,0,0,0,0,0,78000003.0,61410.07,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Bungalow,2,1,1076.4,None,0,0,0,0,0,0,26000002.0,24154.59,2026-02-17,2,February,0,jiji.co.ke
+Utawala,Maisonette,4,3,3196.91,None,0,0,0,0,0,0,14000000.0,4379.23,2026-02-17,2,February,0,jiji.co.ke
+Westlands,House,4,3,2604.89,None,0,0,0,0,0,0,345000004.0,132443.21,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,3,2,2238.91,None,0,0,0,0,0,0,205000003.0,91562.41,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,36274.68,None,0,0,0,0,0,0,650000001.0,17918.83,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,1,1,645.84,None,0,0,0,0,0,0,70000001.0,108385.98,2026-02-17,2,February,0,jiji.co.ke
+Parklands,Apartment,3,2,2152.8,None,0,0,0,0,0,0,125000003.0,58063.92,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Maisonette,5,4,4972.969999999999,None,0,0,0,0,0,0,33000000.0,6635.87,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Townhouse,4,3,2691.0,Terrace,1,0,0,0,0,0,250000004.0,92902.27,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,2,1,1485.43,None,0,0,0,0,0,0,149000002.0,100307.66,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Maisonette,4,3,34724.66,None,0,0,0,0,0,0,250000004.0,7199.49,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,20000000.0,580.64,2026-02-17,2,February,1,jiji.co.ke
+Kileleshwa,Apartment,3,2,4305.6,Security,1,0,0,0,1,0,240000003.0,55741.36,2026-02-17,2,February,0,jiji.co.ke
+Karen,Maisonette,4,3,2045.16,None,0,0,0,0,0,0,900000004.0,440063.37,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,3,2,1829.88,Garden,1,0,0,0,0,1,253800003.0,138697.62,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,2,1,1399.32,None,0,0,0,0,0,0,144500002.0,103264.44,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,2,1,1022.58,None,0,0,0,0,0,0,126000002.0,123217.75,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Maisonette,4,3,4972.969999999999,None,0,0,0,0,0,0,25000000.0,5027.18,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Bungalow,1,1,6996.6,None,0,0,0,0,0,0,65000001.0,9290.23,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,House,4,3,4305.6,None,0,0,0,0,0,0,125000004.0,29031.96,2026-02-17,2,February,0,jiji.co.ke
+South C,Bungalow,3,2,1291.68,None,0,0,0,0,0,0,110000003.0,85160.41,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Maisonette,3,2,2314.26,Terrace,1,0,0,0,0,0,145000003.0,62655.02,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Apartment,1,1,645.84,"Gym, Parking, Garden, Lift",4,1,0,1,0,1,65000001.0,100644.12,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,House,6,5,3229.2,Security,1,0,0,0,1,0,195000006.0,60386.48,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Mansion,4,3,3013.92,None,0,0,0,0,0,0,150000004.0,49769.07,2026-02-17,2,February,0,jiji.co.ke
+Embakasi,Maisonette,9994,9993,3229.2,None,0,0,0,0,0,0,99999994.0,30967.42,2026-02-17,2,February,0,jiji.co.ke
+Runda,House,4,3,10764.0,None,0,0,0,0,0,0,1200000004.0,111482.72,2026-02-17,2,February,0,jiji.co.ke
+Runda,Maisonette,4,3,4617.76,None,0,0,0,0,0,0,420000004.0,90953.19,2026-02-17,2,February,0,jiji.co.ke
+Langata,Maisonette,4,3,1829.88,None,0,0,0,0,0,0,260000004.0,142085.82,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,1,1,462.85,None,0,0,0,0,0,0,52000001.0,112347.41,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,7882,7881,1033.34,None,0,0,0,0,0,0,109877882.0,106332.75,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,2,1,1184.04,None,0,0,0,0,0,0,84000002.0,70943.55,2026-02-17,2,February,0,jiji.co.ke
+Kitisuru,Maisonette,5,4,10613.3,None,0,0,0,0,0,0,2770000005.0,260993.28,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Apartment,2,1,602.78,None,0,0,0,0,0,0,53600002.0,88921.33,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Apartment,2,1,968.76,None,0,0,0,0,0,0,90000002.0,92902.27,2026-02-17,2,February,0,jiji.co.ke
+Langata,House,4,3,2647.94,None,0,0,0,0,0,0,388000004.0,146529.0,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Apartment,1,1,645.84,None,0,0,0,0,0,0,76000001.0,117676.21,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Bungalow,3,2,2152.8,None,0,0,0,0,0,0,200000003.0,92902.27,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,1,1,645.84,"Gym, Lift",2,0,0,1,0,0,70000001.0,108385.98,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,House,4,3,21528.0,None,0,0,0,0,0,0,270000004.0,12541.81,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Apartment,1,1,247.57,None,0,0,0,0,0,0,23000001.0,92903.02,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Townhouse,4,3,2583.36,Terrace,1,0,0,0,0,0,210000004.0,81289.49,2026-02-17,2,February,0,jiji.co.ke
+Embakasi,Maisonette,9993,9992,2691.0,None,0,0,0,0,0,0,99999993.0,37160.9,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,3,2,1420.85,None,0,0,0,0,0,0,130000003.0,91494.53,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Bungalow,2,1,1076.4,None,0,0,0,0,0,0,26000002.0,24154.59,2026-02-17,2,February,0,jiji.co.ke
+Parklands,Apartment,3,2,30139.2,None,0,0,0,0,0,0,210000003.0,6967.67,2026-02-17,2,February,0,jiji.co.ke
+Embakasi,Apartment,3,2,1453.14,None,0,0,0,0,0,0,87500003.0,60214.43,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,3,2,2195.86,None,0,0,0,0,0,0,294000003.0,133888.32,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,4,3,26910.0,None,0,0,0,0,0,0,265000004.0,9847.64,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,2,1,1237.86,None,0,0,0,0,0,0,148000002.0,119561.18,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,0,1,258.34,None,0,0,0,0,0,0,2700000.0,10451.34,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Apartment,2,1,1184.04,Lift,1,0,0,0,0,0,110000002.0,92902.27,2026-02-17,2,February,0,jiji.co.ke
+Karen,House,4,3,53820.0,None,0,0,0,0,0,0,800000004.0,14864.36,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,2,1,2906.28,None,0,0,0,0,0,0,135000002.0,46451.13,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,861.12,Parking,1,1,0,0,0,0,65000001.0,75483.09,2026-02-17,2,February,0,jiji.co.ke
+Parklands,Apartment,3,2,2045.16,None,0,0,0,0,0,0,140000003.0,68454.3,2026-02-17,2,February,0,jiji.co.ke
+Runda,House,5,4,10010.52,None,0,0,0,0,0,0,2350000005.0,234753.04,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,House,4,3,4305.6,None,0,0,0,0,0,0,280000004.0,65031.59,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Bungalow,3,2,1636.13,None,0,0,0,0,0,0,97500003.0,59591.84,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,1,1,688.9,None,0,0,0,0,0,0,65000001.0,94353.32,2026-02-17,2,February,0,jiji.co.ke
+Runda,House,5,4,4090.32,None,0,0,0,0,0,0,1200000005.0,293375.58,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Apartment,2,1,34444.8,Lift,1,0,0,0,0,0,125000002.0,3628.99,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Townhouse,4,3,4305.6,Terrace,1,0,0,0,0,0,650000004.0,150966.18,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Maisonette,4,3,37996.92,None,0,0,0,0,0,0,1550000004.0,40792.78,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,1,1,731.95,None,0,0,0,0,0,0,93000001.0,127057.86,2026-02-17,2,February,0,jiji.co.ke
+Utawala,Maisonette,4,3,2820.17,None,0,0,0,0,0,0,205000004.0,72690.65,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,1,1,645.84,None,0,0,0,0,0,0,65000001.0,100644.12,2026-02-17,2,February,0,jiji.co.ke
+Parklands,Apartment,3,2,2152.8,None,0,0,0,0,0,0,195000003.0,90579.71,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Villa,5,4,5995.55,Pool,1,0,1,0,0,0,1550000005.0,258525.07,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,1022.58,None,0,0,0,0,0,0,80000002.0,78233.49,2026-02-17,2,February,0,jiji.co.ke
+Utawala,Maisonette,4,3,10764.0,None,0,0,0,0,0,0,130000004.0,12077.3,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,House,6,5,6458.4,None,0,0,0,0,0,0,280000006.0,43354.39,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,1,1,559.73,None,0,0,0,0,0,0,55000001.0,98261.66,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Plot,2,1,4994.5,None,0,0,0,0,0,0,395000002.0,79087.0,2026-02-17,2,February,1,jiji.co.ke
+Lavington,Apartment,4,3,2701.76,None,0,0,0,0,0,0,27000000.0,9993.49,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,1,1,602.78,None,0,0,0,0,0,0,88000001.0,145990.25,2026-02-17,2,February,0,jiji.co.ke
+South B,Maisonette,5,4,4972.969999999999,None,0,0,0,0,0,0,185000005.0,37201.11,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Mansion,4,3,4305.6,None,0,0,0,0,0,0,110000000.0,25548.12,2026-02-17,2,February,0,jiji.co.ke
+Utawala,Mansion,4,3,1076.4,None,0,0,0,0,0,0,145000004.0,134708.29,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,34444.8,None,0,0,0,0,0,0,420000002.0,12193.42,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,3,2,1872.94,None,0,0,0,0,0,0,198000003.0,105716.15,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,34444.8,None,0,0,0,0,0,0,800000001.0,23225.57,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,3,2,1797.59,None,0,0,0,0,0,0,180000003.0,100134.07,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Townhouse,4,3,3390.66,Terrace,1,0,0,0,0,0,380000004.0,112072.58,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,3,2,2152.8,None,0,0,0,0,0,0,280000003.0,130063.17,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Apartment,4,3,4305.6,None,0,0,0,0,0,0,160000004.0,37160.91,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,2,1,1991.34,None,0,0,0,0,0,0,110000002.0,55239.19,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Maisonette,6,5,7534.8,None,0,0,0,0,0,0,1500000006.0,199076.29,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,3,2,1829.88,None,0,0,0,0,0,0,190000003.0,103831.95,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Maisonette,4,3,3229.2,None,0,0,0,0,0,0,340000004.0,105289.24,2026-02-17,2,February,0,jiji.co.ke
+South C,Apartment,2,1,1636.13,None,0,0,0,0,0,0,125000002.0,76399.8,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Maisonette,3,2,2691.0,None,0,0,0,0,0,0,110000003.0,40877.0,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Villa,5,4,2152.8,None,0,0,0,0,0,0,1310000005.0,608509.85,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,1,1,839.59,None,0,0,0,0,0,0,90000001.0,107195.18,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,1,1,635.08,None,0,0,0,0,0,0,78000001.0,122819.17,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Maisonette,8,7,53820.0,None,0,0,0,0,0,0,3550000008.0,65960.61,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Maisonette,4,3,2152.8,None,0,0,0,0,0,0,160000004.0,74321.82,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,1,1,355.21,None,0,0,0,0,0,0,33000001.0,92902.79,2026-02-17,2,February,0,jiji.co.ke
+Westlands,House,3,2,1937.52,None,0,0,0,0,0,0,250000003.0,129030.93,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,3,2,1937.52,None,0,0,0,0,0,0,180000003.0,92902.27,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,4,3,2906.28,None,0,0,0,0,0,0,258000004.0,88773.28,2026-02-17,2,February,0,jiji.co.ke
+Utawala,House,4,3,1959.05,None,0,0,0,0,0,0,220000004.0,112299.33,2026-02-17,2,February,0,jiji.co.ke
+Kitisuru,Apartment,2,1,1216.33,None,0,0,0,0,0,0,125000002.0,102768.16,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,4,3,1722.24,None,0,0,0,0,0,0,336500004.0,195385.08,2026-02-17,2,February,0,jiji.co.ke
+Embakasi,Apartment,3,2,2691.0,None,0,0,0,0,0,0,77000003.0,28613.9,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,3,2,10548.72,None,0,0,0,0,0,0,850000003.0,80578.5,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,3,2,2798.64,Lift,1,0,0,0,0,0,155000003.0,55384.04,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,0,1,516.67,None,0,0,0,0,0,0,4500000.0,8709.62,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Villa,5,4,4843.8,None,0,0,0,0,0,0,170000000.0,35096.41,2026-02-17,2,February,0,jiji.co.ke
+Langata,Townhouse,5,4,3390.66,Terrace,1,0,0,0,0,0,440000005.0,129768.25,2026-02-17,2,February,0,jiji.co.ke
+South B,Apartment,2,1,2152.8,Security,1,0,0,0,1,0,70000002.0,32515.79,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Maisonette,5,4,7534.8,None,0,0,0,0,0,0,110000000.0,14598.93,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Maisonette,7,6,4951.44,None,0,0,0,0,0,0,380000007.0,76745.35,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,527.44,None,0,0,0,0,0,0,54000001.0,102381.32,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,3,2,55865.16,None,0,0,0,0,0,0,165000003.0,2953.54,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,1,1,516.67,None,0,0,0,0,0,0,82000001.0,158708.66,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Villa,5,4,40903.2,None,0,0,0,0,0,0,3500000005.0,85567.88,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,3,2,1237.86,Garden,1,0,0,0,0,1,175000003.0,141373.02,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Maisonette,4,3,8073.0,None,0,0,0,0,0,0,500000004.0,61934.85,2026-02-17,2,February,0,jiji.co.ke
+Ridgeways,House,8,7,5382.0,Pool,1,0,1,0,0,0,1100000008.0,204384.99,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Townhouse,4,3,11366.78,Terrace,1,0,0,0,0,0,1130000004.0,99412.5,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,House,4,3,2540.3,None,0,0,0,0,0,0,140000004.0,55111.6,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,1,1,721.19,Gym,1,0,0,1,0,0,76000001.0,105381.38,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,2,1,1291.68,None,0,0,0,0,0,0,145000002.0,112256.91,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Apartment,1,1,753.48,None,0,0,0,0,0,0,68000001.0,90247.92,2026-02-17,2,February,0,jiji.co.ke
+Donholm,Mansion,3,2,2583.36,None,0,0,0,0,0,0,147000003.0,56902.64,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,2,1,968.76,None,0,0,0,0,0,0,85000002.0,87741.03,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,1,1,645.84,None,0,0,0,0,0,0,75000001.0,116127.84,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,6,5,10753.24,None,0,0,0,0,0,0,550000006.0,51147.38,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Maisonette,4,3,2691.0,Security,1,0,0,0,1,0,150000004.0,55741.36,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,2,1,1399.32,None,0,0,0,0,0,0,125000002.0,89329.1,2026-02-17,2,February,0,jiji.co.ke
+Parklands,Apartment,0,1,968.76,None,0,0,0,0,0,0,8000000.0,8257.98,2026-02-17,2,February,0,jiji.co.ke
+Ridgeways,House,4,3,5102.14,Garden,1,0,0,0,0,1,550000004.0,107797.91,2026-02-17,2,February,0,jiji.co.ke
+Karen,Townhouse,7,6,3390.66,Terrace,1,0,0,0,0,0,1800000007.0,530870.1,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Bungalow,3,2,1614.6,None,0,0,0,0,0,0,95500003.0,59147.78,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,610000001.0,17709.49,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,5005.26,None,0,0,0,0,0,0,1220000001.0,243743.58,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,1,1,1119.46,None,0,0,0,0,0,0,64400001.0,57527.74,2026-02-17,2,February,0,jiji.co.ke
+Parklands,Maisonette,4,3,30139.2,None,0,0,0,0,0,0,225000004.0,7465.36,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,1,1,839.59,None,0,0,0,0,0,0,94000001.0,111959.41,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,2,1,1614.6,None,0,0,0,0,0,0,130000002.0,80515.3,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,2,1,1011.82,None,0,0,0,0,0,0,155400002.0,153584.63,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Mansion,6,5,4305.6,None,0,0,0,0,0,0,230000006.0,53418.8,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,5,4,1614.6,None,0,0,0,0,0,0,340000005.0,210578.47,2026-02-17,2,February,0,jiji.co.ke
+Parklands,Apartment,3,2,2691.0,None,0,0,0,0,0,0,215000003.0,79895.95,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,2,1,1097.93,None,0,0,0,0,0,0,105000002.0,95634.51,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,4,3,2475.72,None,0,0,0,0,0,0,220000004.0,88863.04,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Bungalow,3,2,1614.6,None,0,0,0,0,0,0,95000003.0,58838.1,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,House,4,3,2992.39,None,0,0,0,0,0,0,380000004.0,126988.8,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,2,1,18298.8,None,0,0,0,0,0,0,224000002.0,12241.24,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,34444.8,None,0,0,0,0,0,0,2850000002.0,82741.08,2026-02-17,2,February,0,jiji.co.ke
+South C,Mansion,5,4,8767.28,None,0,0,0,0,0,0,350000005.0,39921.16,2026-02-17,2,February,0,jiji.co.ke
+Muthaiga,Apartment,2,1,1991.34,None,0,0,0,0,0,0,130000002.0,65282.67,2026-02-17,2,February,0,jiji.co.ke
+Runda,Villa,4,3,3767.4,Security,1,0,0,0,1,0,520000004.0,138026.23,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,3,2,2045.16,None,0,0,0,0,0,0,230000003.0,112460.64,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,3,2,1442.38,None,0,0,0,0,0,0,152000003.0,105381.39,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,1001.05,None,0,0,0,0,0,0,75000002.0,74921.33,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Mansion,5,4,9999.76,None,0,0,0,0,0,0,32000000.0,3200.08,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,2,1,1076.4,None,0,0,0,0,0,0,14500000.0,13470.83,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,2,1,1022.58,None,0,0,0,0,0,0,75000002.0,73343.9,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,53820.0,None,0,0,0,0,0,0,123000002.0,2285.4,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Maisonette,0,1,15069.6,None,0,0,0,0,0,0,89000000.0,5905.93,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Apartment,2,1,1506.96,"Gym, Laundry, Balcony",3,0,0,1,0,0,132000002.0,87593.57,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,3,2,1614.6,None,0,0,0,0,0,0,9500000.0,5883.81,2026-02-17,2,February,0,jiji.co.ke
+Muthaiga,Mansion,6,5,7534.8,None,0,0,0,0,0,0,1100000006.0,145989.28,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Maisonette,4,3,5435.82,None,0,0,0,0,0,0,125000004.0,22995.61,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,3,2,2131.27,None,0,0,0,0,0,0,222500003.0,104397.85,2026-02-17,2,February,0,jiji.co.ke
+Parklands,Apartment,4,3,2691.0,Pool,1,0,1,0,0,0,240000004.0,89186.18,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,House,6,5,10764.0,Pool,1,0,1,0,0,0,650000006.0,60386.47,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,4,3,4305.6,None,0,0,0,0,0,0,525000004.0,121934.23,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Maisonette,4,3,4972.969999999999,None,0,0,0,0,0,0,165000004.0,33179.37,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Maisonette,4,3,9687.6,None,0,0,0,0,0,0,400000004.0,41289.9,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,3,2,1614.6,None,0,0,0,0,0,0,300000003.0,185804.54,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,914.94,None,0,0,0,0,0,0,78000002.0,85251.49,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,1,1,699.66,None,0,0,0,0,0,0,72000001.0,102907.13,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,1,1,699.66,None,0,0,0,0,0,0,70000001.0,100048.6,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,1614.6,Garden,1,0,0,0,0,1,45000002.0,27870.68,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,2,1,645.84,Garden,1,0,0,0,0,1,115000002.0,178062.68,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,527.44,None,0,0,0,0,0,0,49000001.0,92901.56,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,4994.5,None,0,0,0,0,0,0,1200000001.0,240264.29,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Mansion,3,2,6458.4,None,0,0,0,0,0,0,250000003.0,38709.28,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,11,10,8460.5,None,0,0,0,0,0,0,2600000011.0,307310.44,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Villa,4,3,4499.35,None,0,0,0,0,0,0,680000004.0,151132.94,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,2,1,1614.6,None,0,0,0,0,0,0,96000002.0,59457.45,2026-02-17,2,February,0,jiji.co.ke
+Langata,Maisonette,3,2,12270.96,None,0,0,0,0,0,0,150000003.0,12223.98,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,3,2,3229.2,Garden,1,0,0,0,0,1,145000003.0,44902.76,2026-02-17,2,February,0,jiji.co.ke
+Parklands,Mansion,5,4,10764.0,Garden,1,0,0,0,0,1,1600000005.0,148643.63,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Maisonette,4,3,1399.32,None,0,0,0,0,0,0,380000004.0,271560.48,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,2,1,1151.75,None,0,0,0,0,0,0,124000002.0,107662.25,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Villa,4,3,4499.35,None,0,0,0,0,0,0,1000000004.0,222254.33,2026-02-17,2,February,0,jiji.co.ke
+South C,Apartment,2,1,1937.52,None,0,0,0,0,0,0,80000002.0,41289.9,2026-02-17,2,February,0,jiji.co.ke
+South C,Mansion,8,7,8767.28,None,0,0,0,0,0,0,950000008.0,108357.44,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Townhouse,8,7,43056.0,Terrace,1,0,0,0,0,0,3550000008.0,82450.76,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,2,1,1022.58,None,0,0,0,0,0,0,100000002.0,97791.86,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,1,1,753.48,None,0,0,0,0,0,0,69000001.0,91575.09,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Maisonette,5,4,7534.8,None,0,0,0,0,0,0,550000005.0,72994.64,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,250000001.0,7257.99,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Mansion,5,4,32292.0,None,0,0,0,0,0,0,68000005.0,2105.78,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,3,2,2002.1,None,0,0,0,0,0,0,125000003.0,62434.45,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,3,2,1291.68,None,0,0,0,0,0,0,105000003.0,81289.49,2026-02-17,2,February,0,jiji.co.ke
+Kitisuru,Villa,5,4,9687.6,None,0,0,0,0,0,0,750000005.0,77418.56,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,3,2,2206.62,None,0,0,0,0,0,0,295000003.0,133688.63,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Plot,0,1,34444.8,None,0,0,0,0,0,0,185000004.0,5370.91,2026-02-17,2,February,1,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,520000001.0,15096.62,2026-02-17,2,February,0,jiji.co.ke
+Karen,Villa,7,6,2152.8,None,0,0,0,0,0,0,1400000007.0,650315.87,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Apartment,3,2,1829.88,None,0,0,0,0,0,0,230000003.0,125691.3,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Maisonette,4,3,3745.87,None,0,0,0,0,0,0,980000004.0,261621.47,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Maisonette,5,4,4972.969999999999,None,0,0,0,0,0,0,25500000.0,5127.72,2026-02-17,2,February,0,jiji.co.ke
+Runda,Mansion,7,6,10764.0,None,0,0,0,0,0,0,1650000007.0,153288.74,2026-02-17,2,February,0,jiji.co.ke
+Donholm,Bungalow,3,2,5382.0,None,0,0,0,0,0,0,250000003.0,46451.13,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Maisonette,5,4,4843.8,None,0,0,0,0,0,0,750000005.0,154837.11,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Plot,0,1,34444.8,None,0,0,0,0,0,0,90000002.0,2612.88,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,1,1,34444.8,None,0,0,0,0,0,0,620000001.0,17999.81,2026-02-17,2,February,1,jiji.co.ke
+Ridgeways,Maisonette,0,1,5382.0,None,0,0,0,0,0,0,150000000.0,27870.68,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,4,3,3261.49,None,0,0,0,0,0,0,400000004.0,122643.33,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,4,3,2960.1,None,0,0,0,0,0,0,310000004.0,104726.19,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,1,1,613.55,None,0,0,0,0,0,0,77000001.0,125499.15,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,3,2,1614.6,"Garden, Laundry",2,0,0,0,0,1,135000003.0,83612.04,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,5005.26,None,0,0,0,0,0,0,1510000001.0,301682.63,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,3,2,2691.0,None,0,0,0,0,0,0,200000003.0,74321.81,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Plot,0,1,6458.4,None,0,0,0,0,0,0,3500000020.0,541929.89,2026-02-17,2,February,1,jiji.co.ke
+Nairobi CBD,Apartment,0,1,1614.6,None,0,0,0,0,0,0,4200000.0,2601.26,2026-02-17,2,February,0,jiji.co.ke
+Lavington,House,5,4,3982.68,None,0,0,0,0,0,0,800000005.0,200869.77,2026-02-17,2,February,0,jiji.co.ke
+Kitisuru,House,0,1,4843.8,None,0,0,0,0,0,0,128000000.0,26425.53,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,5005.26,None,0,0,0,0,0,0,345000001.0,68927.49,2026-02-17,2,February,0,jiji.co.ke
+South C,House,4,3,6996.6,None,0,0,0,0,0,0,1100000004.0,157219.22,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,3,2,1862.17,None,0,0,0,0,0,0,185000003.0,99346.46,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Maisonette,4,3,5382.0,None,0,0,0,0,0,0,650000004.0,120772.95,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Maisonette,5,4,2045.16,None,0,0,0,0,0,0,130000000.0,63564.71,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Maisonette,4,3,4972.969999999999,None,0,0,0,0,0,0,11000000.0,2211.96,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,House,4,3,3175.38,None,0,0,0,0,0,0,290000004.0,91327.65,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,34444.8,None,0,0,0,0,0,0,730000002.0,21193.33,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Apartment,2,1,1184.04,None,0,0,0,0,0,0,105000002.0,88679.44,2026-02-17,2,February,0,jiji.co.ke
+Parklands,Apartment,4,3,2691.0,None,0,0,0,0,0,0,185000004.0,68747.68,2026-02-17,2,February,0,jiji.co.ke
+South C,Apartment,3,2,1614.6,None,0,0,0,0,0,0,180000003.0,111482.72,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,3,2,53820.0,None,0,0,0,0,0,0,290000003.0,5388.33,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,3,2,53820.0,Gym,1,0,0,1,0,0,195000003.0,3623.19,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,2,1,1184.04,"Pool, Gym, Lift, Laundry",4,0,1,1,0,0,145000002.0,122462.08,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,4,3,3638.23,None,0,0,0,0,0,0,340000004.0,93452.04,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,1230000001.0,35709.31,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,House,8,7,4843.8,None,0,0,0,0,0,0,150000000.0,30967.42,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,5,4,3250.73,"Pool, Gym",2,0,1,1,0,0,345000005.0,106130.01,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,4,3,10764.0,"Pool, Gym, Balcony",3,0,1,1,0,0,278000004.0,25826.83,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Maisonette,4,3,5920.2,None,0,0,0,0,0,0,110000004.0,18580.45,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,2,1,53820.0,None,0,0,0,0,0,0,115000002.0,2136.75,2026-02-17,2,February,0,jiji.co.ke
+Donholm,Maisonette,4,3,1722.24,None,0,0,0,0,0,0,180000004.0,104515.05,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,3,2,635.08,"Pool, Gym",2,0,1,1,0,0,105000003.0,165333.51,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,34444.8,Lift,1,0,0,0,0,0,118000000.0,3425.77,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,2,1,4036.5,None,0,0,0,0,0,0,155000002.0,38399.6,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Maisonette,5,4,4972.969999999999,Pool,1,0,1,0,0,0,1600000005.0,321739.32,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,3,2,53820.0,None,0,0,0,0,0,0,183000003.0,3400.22,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,2,1,1345.5,None,0,0,0,0,0,0,145000002.0,107766.63,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,34444.8,None,0,0,0,0,0,0,156000000.0,4528.99,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,5,4,2292.73,None,0,0,0,0,0,0,336500005.0,146768.27,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,House,4,3,4090.32,Terrace,1,0,0,0,0,0,250000004.0,61119.91,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,34444.8,None,0,0,0,0,0,0,600000001.0,17419.18,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,House,4,3,4843.8,Garden,1,0,0,0,0,1,700000004.0,144514.64,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Villa,4,3,4144.14,Garden,1,0,0,0,0,1,250000004.0,60326.15,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Mansion,4,3,45208.8,None,0,0,0,0,0,0,640000004.0,14156.54,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,580000001.0,16838.54,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,4,3,2368.08,None,0,0,0,0,0,0,210000004.0,88679.44,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,4,3,2454.19,None,0,0,0,0,0,0,260000004.0,105941.27,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,1000000001.0,29031.96,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,1,1,645.84,None,0,0,0,0,0,0,65000001.0,100644.12,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Apartment,2,1,1237.86,None,0,0,0,0,0,0,180000002.0,145412.25,2026-02-17,2,February,0,jiji.co.ke
+Runda,Maisonette,5,4,34444.8,None,0,0,0,0,0,0,118000000.0,3425.77,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Apartment,3,2,1657.66,None,0,0,0,0,0,0,260000003.0,156847.61,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,95000000.0,2758.04,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Maisonette,5,4,4994.5,None,0,0,0,0,0,0,67000005.0,13414.76,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,House,4,3,2777.11,None,0,0,0,0,0,0,295000004.0,106225.54,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,45208.8,None,0,0,0,0,0,0,2520000001.0,55741.36,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Townhouse,5,4,3390.66,Terrace,1,0,0,0,0,0,650000005.0,191703.09,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,3,2,1248.62,None,0,0,0,0,0,0,145000003.0,116128.21,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Mansion,6,5,48438.0,None,0,0,0,0,0,0,27000000.0,557.41,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,34444.8,None,0,0,0,0,0,0,150000002.0,4354.79,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,2,1,1022.58,None,0,0,0,0,0,0,95000002.0,92902.27,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Mansion,6,5,8767.28,None,0,0,0,0,0,0,85000000.0,9695.14,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,34444.8,None,0,0,0,0,0,0,155000000.0,4499.95,2026-02-17,2,February,0,jiji.co.ke
+Lavington,Apartment,3,2,2152.8,None,0,0,0,0,0,0,200000003.0,92902.27,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Villa,4,3,4499.35,None,0,0,0,0,0,0,15000000.0,3333.81,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Maisonette,5,4,4090.32,None,0,0,0,0,0,0,27000000.0,6600.95,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,34444.8,None,0,0,0,0,0,0,460000001.0,13354.7,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,2,1,1194.8,Pool,1,0,1,0,0,0,118000002.0,98761.3,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Townhouse,4,3,3390.66,"Garden, Terrace",2,0,0,0,0,1,580000004.0,171058.14,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,61000000.0,1770.95,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Maisonette,4,3,2970.86,None,0,0,0,0,0,0,250000004.0,84150.72,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Townhouse,4,3,2691.0,Terrace,1,0,0,0,0,0,59000000.0,21924.93,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Apartment,1,1,861.12,None,0,0,0,0,0,0,13800000.0,16025.64,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,700000001.0,20322.37,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,2,1,1108.69,None,0,0,0,0,0,0,90000002.0,81176.89,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Maisonette,5,4,4520.88,None,0,0,0,0,0,0,250000005.0,55298.97,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,34444.8,None,0,0,0,0,0,0,60000000.0,1741.92,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,2,1,1399.32,None,0,0,0,0,0,0,150000002.0,107194.92,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,1515000001.0,43983.42,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,34444.8,None,0,0,0,0,0,0,400000001.0,11612.78,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Apartment,0,1,1614.6,None,0,0,0,0,0,0,100000002.0,61934.85,2026-02-17,2,February,0,jiji.co.ke
+Utawala,Apartment,1,1,45208.8,None,0,0,0,0,0,0,770000001.0,17032.08,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,5,4,3261.49,None,0,0,0,0,0,0,400000005.0,122643.33,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Apartment,3,2,1829.88,Garden,1,0,0,0,0,1,19500000.0,10656.44,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,34444.8,None,0,0,0,0,0,0,500000002.0,14515.98,2026-02-17,2,February,0,jiji.co.ke
+Donholm,Apartment,1,1,34444.8,None,0,0,0,0,0,0,730000001.0,21193.33,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,2,1,34444.8,None,0,0,0,0,0,0,152000000.0,4412.86,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,House,0,1,4843.8,None,0,0,0,0,0,0,135000003.0,27870.68,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Maisonette,4,3,5005.26,None,0,0,0,0,0,0,395000004.0,78916.98,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,2,1,1151.75,None,0,0,0,0,0,0,107000002.0,92902.11,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,34444.8,None,0,0,0,0,0,0,150000001.0,4354.79,2026-02-17,2,February,0,jiji.co.ke
+Kilimani,Apartment,1,1,699.66,None,0,0,0,0,0,0,90000001.0,128633.91,2026-02-17,2,February,0,jiji.co.ke
+Kileleshwa,Apartment,4,3,2281.97,None,0,0,0,0,0,0,195000004.0,85452.48,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Villa,4,3,4499.35,None,0,0,0,0,0,0,28500000.0,6334.25,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,2,1,34444.8,None,0,0,0,0,0,0,24500000.0,711.28,2026-02-17,2,February,0,jiji.co.ke
+Westlands,Apartment,3,2,1399.32,None,0,0,0,0,0,0,198000003.0,141497.3,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,5005.26,None,0,0,0,0,0,0,38500000.0,7691.91,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,34444.8,None,0,0,0,0,0,0,750000002.0,21773.97,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,34444.8,None,0,0,0,0,0,0,450000001.0,13064.38,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,130000000.0,3774.15,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,2,1,34444.8,None,0,0,0,0,0,0,420000002.0,12193.42,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Plot,1,1,34444.8,None,0,0,0,0,0,0,1100000001.0,31935.15,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Apartment,1,1,34444.8,None,0,0,0,0,0,0,395000001.0,11467.62,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,34444.8,None,0,0,0,0,0,0,630000001.0,18290.13,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Plot,1,1,34444.8,None,0,0,0,0,0,0,1300000001.0,37741.55,2026-02-17,2,February,1,jiji.co.ke
+Kasarani,Apartment,2,1,34444.8,None,0,0,0,0,0,0,380000002.0,11032.14,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,58500000.0,1698.37,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,34444.8,None,0,0,0,0,0,0,250000002.0,7257.99,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,34444.8,None,0,0,0,0,0,0,620000001.0,17999.81,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,34444.8,None,0,0,0,0,0,0,300000001.0,8709.59,2026-02-17,2,February,0,jiji.co.ke
+Utawala,House,3,2,34444.8,None,0,0,0,0,0,0,125000000.0,3628.99,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,4994.5,Lift,1,0,0,0,0,0,1600000001.0,320352.39,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,34444.8,None,0,0,0,0,0,0,390000001.0,11322.46,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,34444.8,None,0,0,0,0,0,0,370000001.0,10741.82,2026-02-17,2,February,0,jiji.co.ke
+Utawala,Apartment,2,1,34444.8,None,0,0,0,0,0,0,76000000.0,2206.43,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Bungalow,4,3,1636.13,None,0,0,0,0,0,0,80000004.0,48895.87,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,2,1,34444.8,None,0,0,0,0,0,0,1320000002.0,38322.19,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,4994.5,None,0,0,0,0,0,0,400000001.0,80088.1,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,2,1,34444.8,None,0,0,0,0,0,0,550000002.0,15967.58,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,2,1,49514.4,None,0,0,0,0,0,0,410000002.0,8280.42,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Mansion,5,4,4994.5,None,0,0,0,0,0,0,40000000.0,8008.81,2026-02-17,2,February,0,jiji.co.ke
+Utawala,House,3,2,34444.8,None,0,0,0,0,0,0,120000000.0,3483.84,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,House,4,3,4843.8,None,0,0,0,0,0,0,15000000.0,3096.74,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,34444.8,None,0,0,0,0,0,0,450000002.0,13064.38,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,34444.8,None,0,0,0,0,0,0,530000002.0,15386.94,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,34444.8,None,0,0,0,0,0,0,430000001.0,12483.74,2026-02-17,2,February,0,jiji.co.ke
+Langata,Apartment,2,1,49514.4,None,0,0,0,0,0,0,2500000002.0,50490.36,2026-02-17,2,February,0,jiji.co.ke
+Syokimau,Bungalow,3,2,1636.13,None,0,0,0,0,0,0,80000003.0,48895.87,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,400000001.0,11612.78,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,390000001.0,11322.46,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,34444.8,None,0,0,0,0,0,0,280000002.0,8128.95,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Plot,2,1,34444.8,None,0,0,0,0,0,0,1200000002.0,34838.35,2026-02-17,2,February,1,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,980000001.0,28451.32,2026-02-17,2,February,0,jiji.co.ke
+Runda,Maisonette,5,4,34444.8,None,0,0,0,0,0,0,1150000005.0,33386.75,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Mansion,5,4,49514.4,Garden,1,0,0,0,0,1,550000005.0,11107.88,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,2300000001.0,66773.5,2026-02-17,2,February,0,jiji.co.ke
+Embakasi,Apartment,1,1,34444.8,None,0,0,0,0,0,0,1350000001.0,39193.14,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,38750.4,None,0,0,0,0,0,0,64000000.0,1651.6,2026-02-17,2,February,0,jiji.co.ke
+Runda,Mansion,4,3,45208.8,None,0,0,0,0,0,0,1160000004.0,25658.72,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,300000001.0,8709.59,2026-02-17,2,February,0,jiji.co.ke
+Runda,Maisonette,5,4,4972.969999999999,None,0,0,0,0,0,0,200000000.0,40217.42,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,34444.8,None,0,0,0,0,0,0,2530000002.0,73450.85,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,720000001.0,20903.01,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,1614.6,None,0,0,0,0,0,0,1010000001.0,625541.93,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,34444.8,None,0,0,0,0,0,0,380000001.0,11032.14,2026-02-17,2,February,0,jiji.co.ke
+Langata,Apartment,2,1,45208.8,None,0,0,0,0,0,0,250000000.0,5529.9,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,34444.8,None,0,0,0,0,0,0,1000000001.0,29031.96,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,34444.8,None,0,0,0,0,0,0,600000002.0,17419.18,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Plot,2,1,34444.8,None,0,0,0,0,0,0,260000002.0,7548.31,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Apartment,1,1,45208.8,None,0,0,0,0,0,0,125000000.0,2764.95,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,34444.8,None,0,0,0,0,0,0,14500000.0,420.96,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Mansion,4,3,5005.26,None,0,0,0,0,0,0,340000004.0,67928.54,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,430000001.0,12483.74,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,1,1,34444.8,None,0,0,0,0,0,0,410000001.0,11903.1,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,2,1,34444.8,None,0,0,0,0,0,0,1000000002.0,29031.96,2026-02-17,2,February,0,jiji.co.ke
+Donholm,Apartment,2,1,34444.8,None,0,0,0,0,0,0,700000002.0,20322.37,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,1,1,34444.8,None,0,0,0,0,0,0,2320000001.0,67354.14,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Maisonette,4,3,4994.5,None,0,0,0,0,0,0,350000004.0,70077.09,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Mansion,4,3,45208.8,None,0,0,0,0,0,0,670000004.0,14820.12,2026-02-17,2,February,0,jiji.co.ke
+Kasarani,Apartment,2,1,34444.8,None,0,0,0,0,0,0,400000002.0,11612.78,2026-02-17,2,February,0,jiji.co.ke
+Utawala,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,2300000.0,264.7,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,2500000.0,72.58,2026-02-17,2,February,1,jiji.co.ke
+Westlands,Plot,0,1,34444.8,None,0,0,0,0,0,0,6500000.0,188.71,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,8000000.0,232.26,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Plot,0,1,34444.8,None,0,0,0,0,0,0,7000000.0,203.22,2026-02-17,2,February,1,jiji.co.ke
+Nairobi CBD,Plot,0,1,34444.8,None,0,0,0,0,0,0,11500000.0,333.87,2026-02-17,2,February,1,jiji.co.ke
+Karen,Plot,0,1,34444.8,None,0,0,0,0,0,0,28000000.0,812.89,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,40000000.0,4603.39,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,37000000.0,1074.18,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Plot,0,1,34444.8,None,0,0,0,0,0,0,27999999.0,812.89,2026-02-17,2,February,1,jiji.co.ke
+Karen,Plot,0,1,34444.8,None,0,0,0,0,0,0,69000000.0,2003.21,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Plot,0,1,34444.8,None,0,0,0,0,0,0,120000000.0,3483.84,2026-02-17,2,February,1,jiji.co.ke
+Runda,Plot,0,1,34444.8,None,0,0,0,0,0,0,40000000.0,1161.28,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,950000.0,109.33,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,6500000.0,188.71,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Plot,0,1,34444.8,None,0,0,0,0,0,0,3999999.0,116.13,2026-02-17,2,February,1,jiji.co.ke
+Embakasi,Plot,0,1,34444.8,None,0,0,0,0,0,0,3999999.0,116.13,2026-02-17,2,February,1,jiji.co.ke
+Karen,Plot,0,1,34444.8,None,0,0,0,0,0,0,65000000.0,1887.08,2026-02-17,2,February,1,jiji.co.ke
+Lavington,Plot,0,1,34444.8,None,0,0,0,0,0,0,120000000.0,3483.84,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,700000.0,20.32,2026-02-17,2,February,1,jiji.co.ke
+South C,Plot,0,1,34444.8,None,0,0,0,0,0,0,38000000.0,1103.21,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,550000.0,15.97,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Villa,0,1,4499.35,None,0,0,0,0,0,0,115000000.0,25559.25,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,1400000.0,40.64,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,30000000.0,870.96,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,950000.0,27.58,2026-02-17,2,February,1,jiji.co.ke
+Kasarani,Plot,0,1,34444.8,None,0,0,0,0,0,0,15000000.0,435.48,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,850000000.0,24677.16,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,5000000.0,575.42,2026-02-17,2,February,1,jiji.co.ke
+Nairobi CBD,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,2500000.0,287.71,2026-02-17,2,February,1,jiji.co.ke
+Kasarani,Plot,0,1,34444.8,None,0,0,0,0,0,0,17500000.0,508.06,2026-02-17,2,February,1,jiji.co.ke
+Parklands,Plot,0,1,34444.8,None,0,0,0,0,0,0,230000000.0,6677.35,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Plot,0,1,34444.8,None,0,0,0,0,0,0,2000000.0,58.06,2026-02-17,2,February,1,jiji.co.ke
+Kasarani,Plot,0,1,34444.8,None,0,0,0,0,0,0,11800000.0,342.58,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Land,0,1,8689.240000000002,Garden,1,0,0,0,0,1,85000000.0,9782.21,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,9500000.0,275.8,2026-02-17,2,February,1,jiji.co.ke
+Runda,Plot,0,1,34444.8,None,0,0,0,0,0,0,70000000.0,2032.24,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,15000000.0,1726.27,2026-02-17,2,February,1,jiji.co.ke
+Kitisuru,Plot,0,1,34444.8,None,0,0,0,0,0,0,85000000.0,2467.72,2026-02-17,2,February,1,jiji.co.ke
+Kasarani,Plot,0,1,34444.8,None,0,0,0,0,0,0,12000000.0,348.38,2026-02-17,2,February,1,jiji.co.ke
+Upperhill,Plot,0,1,34444.8,None,0,0,0,0,0,0,130000000.0,3774.15,2026-02-17,2,February,1,jiji.co.ke
+Kitisuru,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,250000000.0,28771.22,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,395000.0,11.47,2026-02-17,2,February,1,jiji.co.ke
+Kasarani,Plot,0,1,34444.8,None,0,0,0,0,0,0,53000000.0,1538.69,2026-02-17,2,February,1,jiji.co.ke
+Karen,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,360000000.0,41430.55,2026-02-17,2,February,1,jiji.co.ke
+Westlands,Plot,0,1,34444.8,None,0,0,0,0,0,0,120000000.0,3483.84,2026-02-17,2,February,1,jiji.co.ke
+Kasarani,Plot,0,1,34444.8,None,0,0,0,0,0,0,4000000.0,116.13,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Plot,0,1,34444.8,None,0,0,0,0,0,0,4500000.0,130.64,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,130000000.0,3774.15,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,950000.0,27.58,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,130000000.0,3774.15,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,900000.0,26.13,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,60000000.0,6905.09,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,750000.0,21.77,2026-02-17,2,February,1,jiji.co.ke
+Karen,Plot,0,1,34444.8,None,0,0,0,0,0,0,40000000.0,1161.28,2026-02-17,2,February,1,jiji.co.ke
+Kasarani,Plot,0,1,34444.8,None,0,0,0,0,0,0,15000000.0,435.48,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,13000000.0,377.42,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,645000.0,18.73,2026-02-17,2,February,1,jiji.co.ke
+Karen,Plot,0,1,34444.8,Security,1,0,0,0,1,0,78000000.0,2264.49,2026-02-17,2,February,1,jiji.co.ke
+Kasarani,Plot,0,1,34444.8,None,0,0,0,0,0,0,40000000.0,1161.28,2026-02-17,2,February,1,jiji.co.ke
+Karen,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,75000000.0,8631.36,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Plot,0,1,34444.8,None,0,0,0,0,0,0,13000000.0,377.42,2026-02-17,2,February,1,jiji.co.ke
+Kasarani,Plot,0,1,34444.8,None,0,0,0,0,0,0,15500000.0,450.0,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,80000000.0,2322.56,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,42000000.0,1219.34,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,26000000.0,754.83,2026-02-17,2,February,1,jiji.co.ke
+Nairobi CBD,House,0,1,4843.8,None,0,0,0,0,0,0,450000000.0,92902.27,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,10000000.0,1150.85,2026-02-17,2,February,1,jiji.co.ke
+Karen,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,90000000.0,10357.64,2026-02-17,2,February,1,jiji.co.ke
+Nairobi CBD,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,7200000.0,828.61,2026-02-17,2,February,1,jiji.co.ke
+Parklands,Plot,0,1,34444.8,None,0,0,0,0,0,0,125000000.0,3628.99,2026-02-17,2,February,1,jiji.co.ke
+Westlands,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,25000000.0,2877.12,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,15500000.0,450.0,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,4000000.0,460.34,2026-02-17,2,February,1,jiji.co.ke
+Nairobi CBD,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,35000000.0,4027.97,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,120000000.0,13810.18,2026-02-17,2,February,1,jiji.co.ke
+Nairobi CBD,Plot,0,1,34444.8,None,0,0,0,0,0,0,300000000.0,8709.59,2026-02-17,2,February,1,jiji.co.ke
+Westlands,Plot,0,1,34444.8,None,0,0,0,0,0,0,13000000.0,377.42,2026-02-17,2,February,1,jiji.co.ke
+Lavington,Plot,0,1,34444.8,None,0,0,0,0,0,0,170000000.0,4935.43,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,39000000.0,1132.25,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,15000000.0,435.48,2026-02-17,2,February,1,jiji.co.ke
+Westlands,Plot,0,1,34444.8,None,0,0,0,0,0,0,45000000.0,1306.44,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,Garden,1,0,0,0,0,1,425000.0,12.34,2026-02-17,2,February,1,jiji.co.ke
+Nairobi CBD,House,0,1,4843.8,None,0,0,0,0,0,0,100000000.0,20644.95,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Plot,0,1,34444.8,None,0,0,0,0,0,0,1050000.0,30.48,2026-02-17,2,February,1,jiji.co.ke
+Nairobi CBD,Plot,0,1,34444.8,None,0,0,0,0,0,0,4500000.0,130.64,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,1650000.0,47.9,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,Security,1,0,0,0,1,0,1200000.0,34.84,2026-02-17,2,February,1,jiji.co.ke
+Karen,Plot,0,1,34444.8,None,0,0,0,0,0,0,120000000.0,3483.84,2026-02-17,2,February,1,jiji.co.ke
+Upperhill,Plot,0,1,34444.8,None,0,0,0,0,0,0,320000000.0,9290.23,2026-02-17,2,February,1,jiji.co.ke
+Embakasi,Plot,0,1,34444.8,None,0,0,0,0,0,0,4199999.0,121.93,2026-02-17,2,February,1,jiji.co.ke
+Westlands,Plot,0,1,34444.8,None,0,0,0,0,0,0,400000000.0,11612.78,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Plot,0,1,34444.8,None,0,0,0,0,0,0,4000000.0,116.13,2026-02-17,2,February,1,jiji.co.ke
+Kasarani,Plot,0,1,34444.8,None,0,0,0,0,0,0,8500000.0,246.77,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,100000000.0,2903.2,2026-02-17,2,February,1,jiji.co.ke
+Kasarani,Plot,0,1,34444.8,None,0,0,0,0,0,0,9000000.0,261.29,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,150000000.0,4354.79,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,119999999.0,3483.83,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,8000000.0,232.26,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Plot,0,1,34444.8,None,0,0,0,0,0,0,19999999.0,580.64,2026-02-17,2,February,1,jiji.co.ke
+Lavington,Plot,0,1,34444.8,None,0,0,0,0,0,0,260000000.0,7548.31,2026-02-17,2,February,1,jiji.co.ke
+Nairobi CBD,Plot,0,1,34444.8,None,0,0,0,0,0,0,13000000.0,377.42,2026-02-17,2,February,1,jiji.co.ke
+Karen,Plot,0,1,34444.8,None,0,0,0,0,0,0,35000000.0,1016.12,2026-02-17,2,February,1,jiji.co.ke
+Westlands,Plot,0,1,34444.8,None,0,0,0,0,0,0,470000000.0,13645.02,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,120000000.0,3483.84,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,35000000.0,1016.12,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Apartment,0,1,1614.6,None,0,0,0,0,0,0,24000000.0,14864.36,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,370000.0,10.74,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,680000.0,19.74,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,1950000.0,56.61,2026-02-17,2,February,1,jiji.co.ke
+Embakasi,Plot,0,1,34444.8,None,0,0,0,0,0,0,15000000.0,435.48,2026-02-17,2,February,1,jiji.co.ke
+Nairobi CBD,Plot,0,1,34444.8,None,0,0,0,0,0,0,60000000.0,1741.92,2026-02-17,2,February,1,jiji.co.ke
+Nairobi CBD,Plot,0,1,34444.8,None,0,0,0,0,0,0,12000000.0,348.38,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,27000000.0,783.86,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,30000000.0,870.96,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,650000.0,18.87,2026-02-17,2,February,1,jiji.co.ke
+Runda,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,100000000.0,11508.49,2026-02-17,2,February,1,jiji.co.ke
+Ngong,Plot,0,1,34444.8,None,0,0,0,0,0,0,160000000.0,4645.11,2026-02-17,2,February,1,jiji.co.ke
+Runda,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,50000000.0,5754.24,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,15000000.0,435.48,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,12000000.0,348.38,2026-02-17,2,February,1,jiji.co.ke
+Kasarani,Plot,0,1,34444.8,None,0,0,0,0,0,0,50000000.0,1451.6,2026-02-17,2,February,1,jiji.co.ke
+Nairobi CBD,Plot,0,1,34444.8,None,0,0,0,0,0,0,16000000.0,464.51,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,250000000.0,7257.99,2026-02-17,2,February,1,jiji.co.ke
+Karen,Plot,0,1,34444.8,None,0,0,0,0,0,0,72000000.0,2090.3,2026-02-17,2,February,1,jiji.co.ke
+Ngong,Plot,0,1,34444.8,None,0,0,0,0,0,0,100000000.0,2903.2,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,3250000.0,94.35,2026-02-17,2,February,1,jiji.co.ke
+Karen,Plot,0,1,34444.8,None,0,0,0,0,0,0,150000000.0,4354.79,2026-02-17,2,February,1,jiji.co.ke
+Embakasi,Plot,0,1,34444.8,None,0,0,0,0,0,0,19999999.0,580.64,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,1000000.0,29.03,2026-02-17,2,February,1,jiji.co.ke
+Embakasi,Apartment,0,1,1614.6,None,0,0,0,0,0,0,21000000.0,13006.32,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Apartment,0,1,1614.6,None,0,0,0,0,0,0,15000000.0,9290.23,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,House,0,1,4843.8,None,0,0,0,0,0,0,230000000.0,47483.38,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,990000.0,113.93,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,18000000.0,522.58,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Plot,0,1,34444.8,None,0,0,0,0,0,0,4999999.0,145.16,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,1500000.0,43.55,2026-02-17,2,February,1,jiji.co.ke
+Embakasi,Plot,0,1,34444.8,None,0,0,0,0,0,0,10000000.0,290.32,2026-02-17,2,February,1,jiji.co.ke
+Karen,Plot,0,1,34444.8,None,0,0,0,0,0,0,37000000.0,1074.18,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,100000000.0,2903.2,2026-02-17,2,February,1,jiji.co.ke
+Embakasi,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,15000000.0,1726.27,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,13000000.0,377.42,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,4500000.0,130.64,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Plot,0,1,34444.8,None,0,0,0,0,0,0,24999999.0,725.8,2026-02-17,2,February,1,jiji.co.ke
+Embakasi,Plot,0,1,34444.8,None,0,0,0,0,0,0,20000000.0,580.64,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,10000000.0,290.32,2026-02-17,2,February,1,jiji.co.ke
+Nairobi CBD,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,470000000.0,54089.89,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,140000000.0,4064.47,2026-02-17,2,February,1,jiji.co.ke
+Upperhill,Apartment,0,1,1614.6,None,0,0,0,0,0,0,18000000.0,11148.27,2026-02-17,2,February,0,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,5500000.0,159.68,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,9000000.0,261.29,2026-02-17,2,February,1,jiji.co.ke
+Nairobi CBD,Plot,0,1,34444.8,None,0,0,0,0,0,0,7000000.0,203.22,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Plot,0,1,34444.8,None,0,0,0,0,0,0,14000000.0,406.45,2026-02-17,2,February,1,jiji.co.ke
+Karen,Plot,0,1,34444.8,None,0,0,0,0,0,0,40000000.0,1161.28,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Plot,0,1,34444.8,None,0,0,0,0,0,0,4000000.0,116.13,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Plot,0,1,34444.8,None,0,0,0,0,0,0,15999999.0,464.51,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,4500000.0,130.64,2026-02-17,2,February,1,jiji.co.ke
+Nairobi CBD,Plot,0,1,34444.8,None,0,0,0,0,0,0,55000000.0,1596.76,2026-02-17,2,February,1,jiji.co.ke
+Runda,Plot,0,1,34444.8,None,0,0,0,0,0,0,60000000.0,1741.92,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,19000000.0,2186.61,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,420000000.0,48335.64,2026-02-17,2,February,1,jiji.co.ke
+South B,Apartment,0,1,1614.6,None,0,0,0,0,0,0,84999999.0,52644.62,2026-02-17,2,February,0,jiji.co.ke
+Nairobi CBD,Plot,0,1,34444.8,None,0,0,0,0,0,0,35000000.0,1016.12,2026-02-17,2,February,1,jiji.co.ke
+Runda,Plot,0,1,34444.8,None,0,0,0,0,0,0,130000000.0,3774.15,2026-02-17,2,February,1,jiji.co.ke
+Nairobi CBD,Plot,0,1,34444.8,None,0,0,0,0,0,0,25000000.0,725.8,2026-02-17,2,February,1,jiji.co.ke
+Nairobi CBD,Plot,0,1,34444.8,Garden,1,0,0,0,0,1,6000000.0,174.19,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Apartment,0,1,1614.6,None,0,0,0,0,0,0,13999999.0,8670.88,2026-02-17,2,February,0,jiji.co.ke
+Karen,Land,0,1,8689.240000000002,None,0,0,0,0,0,0,68000000.0,7825.77,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,60000000.0,1741.92,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Plot,0,1,34444.8,None,0,0,0,0,0,0,13999999.0,406.45,2026-02-17,2,February,1,jiji.co.ke
+Runda,Plot,0,1,34444.8,None,0,0,0,0,0,0,55000000.0,1596.76,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,40000000.0,1161.28,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Plot,0,1,34444.8,None,0,0,0,0,0,0,11999999.0,348.38,2026-02-17,2,February,1,jiji.co.ke
+Kileleshwa,Plot,0,1,34444.8,None,0,0,0,0,0,0,300000000.0,8709.59,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,39999999.0,1161.28,2026-02-17,2,February,1,jiji.co.ke
+Westlands,Plot,0,1,34444.8,None,0,0,0,0,0,0,405000000.0,11757.94,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Plot,0,1,34444.8,None,0,0,0,0,0,0,18000000.0,522.58,2026-02-17,2,February,1,jiji.co.ke
+Parklands,Plot,0,1,34444.8,None,0,0,0,0,0,0,220000000.0,6387.03,2026-02-17,2,February,1,jiji.co.ke
+Ridgeways,Plot,0,1,34444.8,None,0,0,0,0,0,0,45000000.0,1306.44,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,12000000.0,348.38,2026-02-17,2,February,1,jiji.co.ke
+Karen,Plot,0,1,34444.8,None,0,0,0,0,0,0,100000000.0,2903.2,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,45000000.0,1306.44,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Plot,0,1,34444.8,None,0,0,0,0,0,0,8999999.0,261.29,2026-02-17,2,February,1,jiji.co.ke
+Westlands,Plot,0,1,34444.8,None,0,0,0,0,0,0,110000000.0,3193.52,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,2700000.0,78.39,2026-02-17,2,February,1,jiji.co.ke
+Runda,Plot,0,1,34444.8,None,0,0,0,0,0,0,140000000.0,4064.47,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,200000000.0,5806.39,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,75000000.0,2177.4,2026-02-17,2,February,1,jiji.co.ke
+Upperhill,Plot,0,1,34444.8,None,0,0,0,0,0,0,550000000.0,15967.58,2026-02-17,2,February,1,jiji.co.ke
+Muthaiga,Plot,0,1,34444.8,None,0,0,0,0,0,0,450000000.0,13064.38,2026-02-17,2,February,1,jiji.co.ke
+Nairobi Other,Plot,0,1,34444.8,None,0,0,0,0,0,0,32000000.0,929.02,2026-02-17,2,February,1,jiji.co.ke
+Lavington,Plot,0,1,34444.8,None,0,0,0,0,0,0,170000000.0,4935.43,2026-02-17,2,February,1,jiji.co.ke
+Utawala,Plot,0,1,34444.8,None,0,0,0,0,0,0,9000000.0,261.29,2026-02-17,2,February,1,jiji.co.ke

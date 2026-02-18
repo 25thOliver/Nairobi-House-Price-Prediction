@@ -1,36 +1,67 @@
-# Python
+# ─── Python ───────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+
+# ─── Virtual Environments ─────────────────────────────────
 env/
 venv/
 ENV/
-.venv
+.venv/
+.conda/
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# ─── Jupyter Notebook ─────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
 
-# Environment variables
+# ─── Environment Variables ────────────────────────────────
 .env
+.env.*
+!.env.example
 
-# Data files (optional - you might want to track raw data)
-# data/raw_listings.csv
+# ─── Data Files ───────────────────────────────────────────
+# Commit data files for this project (small enough)
+# Uncomment below if files become too large (>50MB)
+# data/*.csv
+# data/*.png
 
-# Docker
+# ─── Generated / Temporary Files ─────────────────────────
 *.log
+*.tmp
+*.temp
+*.cache
 
-# IDE
+# ─── IDE & Editor ─────────────────────────────────────────
 .vscode/
 .idea/
 *.swp
 *.swo
+*.sublime-project
+*.sublime-workspace
 
-# OS
+# ─── OS Files ─────────────────────────────────────────────
 .DS_Store
+.DS_Store?
 Thumbs.db
+ehthumbs.db
+desktop.ini
 
-# Model files
-*.pkl
-*.joblib
+# ─── Docker ───────────────────────────────────────────────
+# (docker-compose.yml and Dockerfile ARE committed)
+
+# ─── Model Files ──────────────────────────────────────────
+# NOTE: For this sprint, model.pkl IS a deliverable - commit it
+# Uncomment below ONLY if model files are too large
+# *.pkl
+# *.joblib
+# models/
+
+# ─── Miscellaneous ────────────────────────────────────────
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
