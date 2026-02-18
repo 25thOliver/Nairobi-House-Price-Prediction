@@ -5,6 +5,9 @@ services:
     volumes:
       - ./data:/app/data
       - ./scrapers:/app/scrapers
+      - ./notebooks:/app/notebooks
+    ports:
+      - "8888:8888"
     environment:
       - PYTHONUNBUFFERED=1
     env_file:
