@@ -22,3 +22,6 @@ seaborn==0.13.1
 
 # ML & Modeling (Day 3)
 scikit-learn==1.3.2
+
+# Model Improvement (Day 4)
+xgboost==2.0.3
