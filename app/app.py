@@ -48,6 +48,11 @@ with col2:
 st.subheader("Amenities")
 
 
-
+# Grouped features to match the Day 2 Data Cleaning boolean flags
+amenities = st.multiselect(
+    "Select available amenities:",
+    ["Parking", "Swimming Pool", "Gym", "Security", "Garden"]
+)
+st.divider()
 
         
