@@ -92,3 +92,11 @@ if st.button("Predict Price", type="primary", use_container_width=True):
         st.metric("Estimated Price", f"KES {pred_price:,.0f}")
         st.caption(f"**Expected Range:** KES {lower_bound:,.0f} - KES {upper_bound:,.0f} (± MAE)")
 
+         # Explainability (Drivers)
+        st.subheader(" What's driving this price?")
+        st.info(
+            f"**Size & Bedrooms:** At {size_sqft} sqft with {bedrooms} bedrooms, the property sits nicely within the {location} baseline.\n\n"
+            f"**Amenities Effect:** You selected {len(amenities)} key amenities. Features like " 
+            f"{', '.join(amenities) if amenities else 'None (which lowers value)'} significantly impact the final valuation compared to basic listings."
+        )
+
