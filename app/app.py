@@ -81,3 +81,8 @@ if st.button("Predict Price", type="primary", use_container_width=True):
             # Dummy logic if no model is found
             base = 10000000
             pred_price = base + (size_sqft * 5000) + (bedrooms * 2000000)
+
+         # Calculate bounds
+        lower_bound = max(0, pred_price - ESTIMATED_MAE)
+        upper_bound = pred_price + ESTIMATED_MAE
+
