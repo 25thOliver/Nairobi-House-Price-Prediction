@@ -86,3 +86,9 @@ if st.button("Predict Price", type="primary", use_container_width=True):
         lower_bound = max(0, pred_price - ESTIMATED_MAE)
         upper_bound = pred_price + ESTIMATED_MAE
 
+        # Output Display
+        st.success("Prediction Complete!")
+        
+        st.metric("Estimated Price", f"KES {pred_price:,.0f}")
+        st.caption(f"**Expected Range:** KES {lower_bound:,.0f} - KES {upper_bound:,.0f} (± MAE)")
+
