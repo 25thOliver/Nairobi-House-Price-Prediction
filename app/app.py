@@ -55,4 +55,22 @@ amenities = st.multiselect(
 )
 st.divider()
 
+
+# Prediction Logic
+if st.button("Predict Price", type="primary", use_container_width=True):
+    with st.spinner("Analyzing market data..."):
+        # Map user input to match the feature columns expected by your model
+        input_data = pd.DataFrame([{
+            'location': location,
+            'bedrooms': bedrooms,
+            'bathrooms': bathrooms,
+            'size_sqft': size_sqft,
+            'has_parking': 1 if "Parking" in amenities else 0,
+            'has_pool': 1 if "Swimming Pool" in amenities else 0,
+            'has_gym': 1 if "Gym" in amenities else 0,
+            'has_security': 1 if "Security" in amenities else 0,
+            'has_garden': 1 if "Garden" in amenities else 0,
+            'amenity_score': len(amenities)
+        }])
+        
         
