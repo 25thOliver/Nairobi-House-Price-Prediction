@@ -6,6 +6,8 @@ services:
       - ./data:/app/data
       - ./scrapers:/app/scrapers
       - ./notebooks:/app/notebooks
+      - ./app:/app/app
+      - ./scripts:/app/scripts
     ports:
       - "8888:8888"
       - "8501:8501" 
