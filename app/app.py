@@ -264,7 +264,7 @@ elif nav == "Market Insights":
 
 # Main: Nairobi Map
 else:
-    st.title("Nairobi — Property Locations")
+    st.title("Nairobi: Property Locations")
     st.markdown("Neighborhoods in our dataset. Click and zoom to explore.")
     st.divider()
 
