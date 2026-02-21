@@ -73,4 +73,11 @@ if st.button("Predict Price", type="primary", use_container_width=True):
             'amenity_score': len(amenities)
         }])
         
-        
+        # Make the prediction
+        if model is not None:
+            # Assuming 'model' encapsulates preprocessing (like standardizing & one-hot encoding)
+            pred_price = model.predict(input_data)[0]
+        else:
+            # Dummy logic if no model is found
+            base = 10000000
+            pred_price = base + (size_sqft * 5000) + (bedrooms * 2000000)
