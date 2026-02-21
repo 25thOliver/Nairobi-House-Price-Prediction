@@ -16,7 +16,7 @@ warnings.filterwarnings("ignore")
 # Configuration & styling
 st.set_page_config(
     page_title="Nairobi House Price Predictor",
-    page_icon="🏠",
+    #page_icon="🏠",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -108,7 +108,7 @@ MAE = 240_682_498  # Random Forest MAE from Day 4
 
 # Sidebar
 with st.sidebar:
-    st.title("🏠 Nairobi Valuer")
+    st.title("Nairobi Valuer")
     st.caption("Powered by ML • LTLab Fellowship")
     st.divider()
 
@@ -123,9 +123,7 @@ with st.sidebar:
     st.caption("**Data:** 600+ listings from Jiji.co.ke")
     st.caption("**R²:** ~0.36 | **MAE:** ~241M KES")
 
-# ---------------------------------------------------------------------------
 # Main: Predict Price
-# ---------------------------------------------------------------------------
 if nav == "Predict Price":
     st.title("Nairobi House Price Predictor")
     st.markdown("Get an instant property valuation based on our trained model and **600+ real listings** from Nairobi.")
@@ -234,7 +232,7 @@ elif nav == "Market Insights":
     col1, col2 = st.columns(2)
 
     with col1:
-        st.subheader("🏆 Top 5 Price Drivers")
+        st.subheader("Top 5 Price Drivers")
         for i, (name, _, desc) in enumerate(TOP_DRIVERS, 1):
             st.markdown(f"**{i}. {name}**  \n{desc}")
             st.caption("")
