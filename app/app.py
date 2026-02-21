@@ -28,5 +28,26 @@ st.title("Nairobi House Price Predictor")
 st.markdown("Get an instant property valuation in Nairobi based on our machine learning model.")
 st.divider()
 
+# Input Form
+st.header("Property Details")
+
+col1, col2 = st.columns(2)
+
+with col1:
+    # Top Nairobi loactions 
+    locations = [
+        "Kilimani", "Kileleshwa", "Lavington", "Westlands", 
+        "Syokimau", "Ruaka", "Ruiru", "Nairobi CBD", "Karen", "Muthaiga"
+    ]
+
+    location = st.selectbox("Location", sorted(locations))
+    size_sqft = st.number_input("Size (in SqFt)", min_value=100.0, max_value=20000.0, value=1500.0, step=100.0)
+with col2:
+    bedrooms = st.number_input("Bedrooms", min_value=1, max_value=10, value=3, step=1)
+    bathrooms = st.number_input("Bathrooms", min_value=1, max_value=10, value=2, step=1)
+st.subheader("Amenities")
+
+
+
 
         
