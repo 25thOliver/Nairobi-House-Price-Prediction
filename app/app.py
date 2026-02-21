@@ -153,7 +153,7 @@ if nav == "Predict Price":
             bathrooms = st.number_input("Bathrooms", min_value=0, max_value=10, value=2, step=1)
 
     with col3:
-        st.subheader("✨ Amenities")
+        st.subheader("Amenities")
         amenities = st.multiselect(
             "Select amenities",
             ["Parking", "Swimming Pool", "Gym", "Security", "Garden"],
