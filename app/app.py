@@ -23,5 +23,10 @@ model = load_artifacts()
 
 ESTIMATED_MAE =  240682498
 
+# Header
+st.title("Nairobi House Price Predictor")
+st.markdown("Get an instant property valuation in Nairobi based on our machine learning model.")
+st.divider()
+
 
         
