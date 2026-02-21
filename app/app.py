@@ -258,7 +258,7 @@ elif nav == "Market Insights":
     base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     imp_path = os.path.join(base, "data", "feature_importance_top.png")
     if os.path.exists(imp_path):
-        st.image(imp_path, use_container_width=True)
+        st.image(imp_path, use_column_width=True)
     else:
         st.caption("Run Day 4 script to generate feature importance plots.")
 
