@@ -3,10 +3,10 @@
 ## Dataset: `raw_listings.csv`
 
 ### Overview
-This dataset contains **628 unique property listings** scraped from Jiji.co.ke for houses, apartments, and land for sale in Nairobi, Kenya.
+This dataset contains **628 unique property listings** scraped from BuyRentKenya.com for houses, apartments, and land for sale in Nairobi, Kenya.
 
 **Collection Date:** February 17, 2026  
-**Source:** https://jiji.co.ke/nairobi/  
+**Source:** https://www.buyrentkenya.com/houses-for-rent
 **Categories:** Houses & Apartments for Sale + Land & Plots for Sale  
 **Collection Method:** Multi-source web scraping using BeautifulSoup4 and Requests  
 **Total Scraped:** 705 listings  
@@ -26,7 +26,7 @@ This dataset contains **628 unique property listings** scraped from Jiji.co.ke f
 | `amenities` | String | Comma-separated amenities | "Parking, Security", "Pool, Gym, Parking" | Extracted via keyword matching |
 | `price_kes` | Float | Listing price in Kenyan Shillings | 370000.0, 130000000.0, 15500000000.0 | **Target variable** |
 | `listing_date` | String | Date property was scraped | "2026-02-17" | Format: YYYY-MM-DD |
-| `source` | String | Website source | "jiji.co.ke" | For tracking data provenance |
+| `source` | String | Website source | "buyrentkenya.com" | For tracking data provenance |
 
 ---
 
@@ -140,7 +140,7 @@ print(f"\nProperty types:\n{df['property_type'].value_counts()}")
 ## Data Provenance
 
 ### Scraping Details
-- **Scraper:** Multi-source aggregator with Jiji.co.ke module
+- **Scraper:** Dedicated BuyRentKenya module
 - **Pages Scraped:** 30 total (20 houses/apartments + 10 land/plots)
 - **Rate Limiting:** 2-second delay between requests
 - **Retry Logic:** 3 attempts with exponential backoff
