@@ -145,8 +145,34 @@ class BRKScraper(BaseScraper):
         return all_listings
 
 if __name__ == "__main__":
+    import os
+    from datetime import datetime
+    
+    # Ensure data directory exists
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    data_dir = os.path.dirname(os.path.abspath(__file__)).replace('scrapers', 'data')
+    os.makedirs(data_dir, exist_ok=True)
+    
+    csv_path = os.path.join(data_dir, 'raw_listings.csv')
+    
     scraper = BRKScraper(delay=1)
-    results = scraper.scrape_listings(max_pages=1)
-    print(f"Scraped {len(results)} listings from page 1.")
+    # Scrape ~30 pages to get a solid sample size (~700 listings)
+    results = scraper.scrape_listings(max_pages=30)
+    print(f"Scraped {len(results)} listings.")
+    
     if results:
-        print(results[0])
+        # Save to CSV
+        fieldnames = ['location', 'property_type', 'bedrooms', 'bathrooms', 'size_sqft', 'amenities', 'price_kes', 'listing_date', 'source']
+        
+        with open(csv_path, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            
+            today = datetime.now().strftime('%Y-%m-%d')
+            for r in results:
+                # Fill missing fields required by the dictionary
+                r['amenities'] = ''  # We aren't scraping amenities explicitly yet
+                r['listing_date'] = today
+                writer.writerow(r)
+                
+        print(f"Data saved to {csv_path}")
