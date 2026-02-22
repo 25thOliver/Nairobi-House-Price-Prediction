@@ -1,5 +1,5 @@
 """
-Nairobi House Price Predictor — Day 5 Pricing App
+Nairobi House Price Predictor — Day 5 Pricing App + Day 6 Dashboard
 Streamlit app using trained model and results from notebooks (Day 4).
 """
 
@@ -9,6 +9,9 @@ import numpy as np
 import pickle
 import os
 import warnings
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
 
 warnings.filterwarnings("ignore")
 
@@ -101,6 +104,22 @@ def load_listings_count():
         return 0
 
 
+@st.cache_data
+def load_dashboard_data():
+    """Load full clean listings for Day 6 dashboard."""
+    base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    path = os.path.join(base, "data", "clean_listings.csv")
+    try:
+        df = pd.read_csv(path)
+        if "listing_date" in df.columns:
+            df["listing_date"] = pd.to_datetime(df["listing_date"], errors="coerce")
+        if "month" in df.columns:
+            df["month"] = pd.to_numeric(df["month"], errors="coerce")
+        return df
+    except FileNotFoundError:
+        return None
+
+
 def get_top_drivers_from_model(artifact):
     """Derive top 5 price drivers from trained model feature importances."""
     model = artifact["model"]
@@ -158,7 +177,7 @@ with st.sidebar:
 
     nav = st.radio(
         "Navigate",
-        ["Predict Price", "Market Insights", "Nairobi Map"],
+        ["Predict Price", "Market Insights", "Dashboard", "Nairobi Map"],
         label_visibility="collapsed",
     )
 
@@ -320,6 +339,152 @@ elif nav == "Market Insights":
         st.image(imp_path, use_column_width=True)
     else:
         st.caption("Run Day 4 script to generate feature importance plots.")
+
+# Main: Dashboard (Day 6)
+elif nav == "Dashboard":
+    st.title("Market Dashboard")
+    st.markdown("Business story at a glance: location, trends, price per sqft, and amenity impact.")
+    st.divider()
+
+    df_dash = load_dashboard_data()
+    if df_dash is None or len(df_dash) == 0:
+        st.warning("No dashboard data. Ensure `data/clean_listings.csv` exists.")
+    else:
+        tab1, tab2, tab3, tab4 = st.tabs([
+            "Median price by location",
+            "Monthly price trend",
+            "Price per sqft comparison",
+            "Amenity impact analysis",
+        ])
+
+        with tab1:
+            st.subheader("Median price by location")
+            loc_med = df_dash.groupby("location")["price_kes"].median().sort_values(ascending=True)
+            top_n = st.slider("Number of locations to show", 5, min(30, len(loc_med)), 15, key="tab1_n")
+            plot_locs = loc_med.tail(top_n)
+            fig, ax = plt.subplots(figsize=(8, max(4, top_n * 0.35)))
+            ax.barh(range(len(plot_locs)), plot_locs.values, color="steelblue", alpha=0.85)
+            ax.set_yticks(range(len(plot_locs)))
+            ax.set_yticklabels(plot_locs.index, fontsize=9)
+            ax.set_xlabel("Median price (KES)")
+            ax.set_title("Median listing price by location")
+            plt.tight_layout()
+            st.pyplot(fig)
+            plt.close()
+            with st.expander("View table"):
+                st.dataframe(
+                    loc_med.sort_values(ascending=False).to_frame("median_price_kes").rename_axis("location"),
+                    use_container_width=True,
+                    hide_index=True,
+                )
+
+        with tab2:
+            st.subheader("Monthly price trend")
+            if "month" in df_dash.columns and df_dash["month"].notna().any():
+                monthly = df_dash.groupby("month").agg(
+                    median_price=("price_kes", "median"),
+                    count=("price_kes", "count"),
+                ).reset_index()
+                monthly = monthly.sort_values("month")
+                fig, ax = plt.subplots(figsize=(8, 4))
+                ax.plot(monthly["month"], monthly["median_price"], marker="o", color="steelblue", linewidth=2)
+                ax.set_xlabel("Month")
+                ax.set_ylabel("Median price (KES)")
+                ax.set_title("Monthly median price trend")
+                ax.grid(True, alpha=0.3)
+                plt.tight_layout()
+                st.pyplot(fig)
+                plt.close()
+                st.caption(f"Listings per month: {monthly.set_index('month')['count'].to_dict()}")
+            else:
+                st.info("No month data available. Add listing_date/month to your data for trends.")
+            with st.expander("View monthly aggregates"):
+                if "month" in df_dash.columns:
+                    agg = df_dash.groupby("month").agg(median_price_kes=("price_kes", "median"), count=("price_kes", "count")).reset_index()
+                    st.dataframe(agg, use_container_width=True, hide_index=True)
+                else:
+                    st.caption("No month column.")
+
+        with tab3:
+            st.subheader("Price per sqft comparison")
+            # Exclude land and invalid price_per_sqft for comparison
+            df_sqft = df_dash[df_dash["is_land"] != 1].copy()
+            df_sqft = df_sqft[df_sqft["price_per_sqft"].notna() & (df_sqft["price_per_sqft"] > 0)]
+            # Cap extreme outliers for visualization (e.g. 99th percentile)
+            cap = df_sqft["price_per_sqft"].quantile(0.99)
+            df_sqft = df_sqft[df_sqft["price_per_sqft"] <= cap]
+            compare_by = st.radio("Compare by", ["location", "property_type"], horizontal=True, key="tab3_by")
+            if len(df_sqft) > 0:
+                sqft_med = df_sqft.groupby(compare_by)["price_per_sqft"].median().sort_values(ascending=True)
+                top_n_sqft = st.slider("Number to show", 5, min(25, len(sqft_med)), 12, key="tab3_n")
+                plot_sqft = sqft_med.tail(top_n_sqft)
+                fig, ax = plt.subplots(figsize=(8, max(4, len(plot_sqft) * 0.35)))
+                ax.barh(range(len(plot_sqft)), plot_sqft.values, color="seagreen", alpha=0.85)
+                ax.set_yticks(range(len(plot_sqft)))
+                ax.set_yticklabels(plot_sqft.index, fontsize=9)
+                ax.set_xlabel("Median price per sqft (KES)")
+                ax.set_title(f"Price per sqft by {compare_by.replace('_', ' ')}")
+                plt.tight_layout()
+                st.pyplot(fig)
+                plt.close()
+            else:
+                st.caption("No valid price-per-sqft data after filtering.")
+            with st.expander("View table"):
+                if len(df_sqft) > 0:
+                    st.dataframe(
+                        df_sqft.groupby(compare_by)["price_per_sqft"].median().sort_values(ascending=False).to_frame("median_price_per_sqft_kes").rename_axis(compare_by),
+                        use_container_width=True,
+                        hide_index=True,
+                    )
+
+        with tab4:
+            st.subheader("Amenity impact analysis")
+            amenity_cols = [c for c in df_dash.columns if c.startswith("has_") and c in df_dash.columns]
+            if not amenity_cols:
+                st.caption("No amenity columns in data.")
+            else:
+                rows = []
+                for col in amenity_cols:
+                    name = col.replace("has_", "").replace("_", " ").title()
+                    with_amenity = df_dash[df_dash[col] == 1]["price_kes"].median()
+                    without_amenity = df_dash[df_dash[col] == 0]["price_kes"].median()
+                    count_with = (df_dash[col] == 1).sum()
+                    rows.append({
+                        "amenity": name,
+                        "median_price_with": with_amenity,
+                        "median_price_without": without_amenity,
+                        "premium_kes": with_amenity - without_amenity,
+                        "listings_with": int(count_with),
+                    })
+                impact_df = pd.DataFrame(rows).sort_values("premium_kes", ascending=False)
+                impact_df["premium_pct"] = (
+                    (impact_df["median_price_with"] - impact_df["median_price_without"])
+                    / impact_df["median_price_without"].replace(0, np.nan) * 100
+                )
+                st.dataframe(
+                    impact_df.style.format({
+                        "median_price_with": "{:,.0f}",
+                        "median_price_without": "{:,.0f}",
+                        "premium_kes": "{:,.0f}",
+                        "premium_pct": "{:.1f}%",
+                    }, na_rep="—"),
+                    use_container_width=True,
+                    hide_index=True,
+                )
+                # Simple bar: premium in KES
+                fig, ax = plt.subplots(figsize=(8, max(4, len(impact_df) * 0.4)))
+                y_pos = range(len(impact_df))
+                ax.barh(y_pos, impact_df["premium_kes"], color="coral", alpha=0.85)
+                ax.set_yticks(y_pos)
+                ax.set_yticklabels(impact_df["amenity"], fontsize=10)
+                ax.set_xlabel("Median price premium (KES) — with vs without amenity")
+                ax.set_title("Amenity impact on price")
+                ax.axvline(0, color="gray", linewidth=0.8)
+                plt.tight_layout()
+                st.pyplot(fig)
+                plt.close()
+
+    st.divider()
 
 # Main: Nairobi Map
 else:
