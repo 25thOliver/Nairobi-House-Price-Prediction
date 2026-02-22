@@ -1,6 +1,6 @@
 """
 Nairobi House Price Predictor — Day 5 Pricing App
-Streamlit app using trained Random Forest model from Day 4.
+Streamlit app using trained model and results from notebooks (Day 4).
 """
 
 import streamlit as st
@@ -57,15 +57,6 @@ LOCATION_COORDS = {
     "Westlands": (-1.2669, 36.8117),
 }
 
-# Top 5 price drivers from Day 4
-TOP_DRIVERS = [
-    ("Size (sqft)", "size_sqft", "Larger properties command higher prices. Our model weights this as the #1 driver."),
-    ("Bedrooms", "bedrooms", "More bedrooms add significant value, especially in family-oriented areas."),
-    ("Bathrooms", "bathrooms", "En-suite and additional bathrooms increase valuation."),
-    ("Location", "location_enc", "Premium areas (Karen, Muthaiga, Lavington) have higher median prices."),
-    ("Property Type", "property_type_enc", "Houses, villas, and mansions typically outperform apartments."),
-]
-
 # Load artifacts
 @st.cache_resource
 def load_artifacts():
@@ -90,8 +81,49 @@ def load_location_stats():
         return None
 
 
+@st.cache_data
+def load_model_comparison():
+    base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    path = os.path.join(base, "data", "model_comparison.csv")
+    try:
+        return pd.read_csv(path)
+    except FileNotFoundError:
+        return None
+
+
+@st.cache_data
+def load_listings_count():
+    base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    path = os.path.join(base, "data", "clean_listings.csv")
+    try:
+        return len(pd.read_csv(path))
+    except FileNotFoundError:
+        return 0
+
+
+def get_top_drivers_from_model(artifact):
+    """Derive top 5 price drivers from trained model feature importances."""
+    model = artifact["model"]
+    feature_cols = artifact["feature_cols"]
+    if not hasattr(model, "feature_importances_"):
+        return []
+    imp = model.feature_importances_
+    order = np.argsort(imp)[::-1]
+    return [(feature_cols[i], imp[i]) for i in order[:5]]
+
+
+def format_price(median_kes):
+    """Format price for display (rental = thousands, sale = millions)."""
+    if median_kes >= 1e6:
+        return f"KES {median_kes/1e6:.1f}M"
+    if median_kes >= 1e3:
+        return f"KES {median_kes/1e3:.0f}K"
+    return f"KES {median_kes:,.0f}"
+
+
 artifact = load_artifacts()
 location_medians = load_location_stats()
+comparison_df = load_model_comparison()
 
 if artifact is None:
     st.stop()
@@ -103,8 +135,20 @@ le_location = artifact["le_location"]
 le_type = artifact["le_type"]
 feature_cols = artifact["feature_cols"]
 model_name = artifact.get("model_name", "Model")
-MAE = 240_682_498  # Random Forest MAE from Day 4
 
+# MAE and metrics from notebook results (model_comparison.csv)
+if comparison_df is not None and len(comparison_df) > 0:
+    best_row = comparison_df.loc[comparison_df["R2"].idxmax()]
+    MAE = float(best_row["MAE"])
+    best_model_display = best_row["Model"]
+    best_r2 = float(best_row["R2"])
+else:
+    MAE = 131_812  # fallback
+    best_model_display = model_name
+    best_r2 = 0.23
+n_listings = load_listings_count()
+
+top_drivers = get_top_drivers_from_model(artifact)
 
 # Sidebar
 with st.sidebar:
@@ -119,14 +163,14 @@ with st.sidebar:
     )
 
     st.divider()
-    st.caption("**Model:** Random Forest")
-    st.caption("**Data:** 600+ listings from BuyRentKenya.com")
-    st.caption("**R²:** ~0.36 | **MAE:** ~241M KES")
+    st.caption(f"**Model:** {best_model_display}")
+    st.caption(f"**Data:** {n_listings} listings (BuyRentKenya)")
+    st.caption(f"**R²:** {best_r2:.2f} | **MAE:** KES {MAE:,.0f}")
 
 # Main: Predict Price
 if nav == "Predict Price":
     st.title("Nairobi House Price Predictor")
-    st.markdown("Get an instant property valuation based on our trained model and **600+ real listings** from Nairobi.")
+    st.markdown(f"Get an instant property valuation based on our trained model and **{n_listings} real listings** from Nairobi.")
     st.divider()
 
     col1, col2, col3 = st.columns([1, 1, 1])
@@ -202,16 +246,16 @@ if nav == "Predict Price":
                 upper = pred_price + MAE
 
                 st.success("Prediction complete!")
-                st.metric("Estimated Price", f"KES {pred_price:,.0f}")
-                st.caption(f"**Expected range:** KES {lower:,.0f} – KES {upper:,.0f} (± MAE)")
+                st.metric("Estimated Price", format_price(pred_price))
+                st.caption(f"**Expected range:** {format_price(lower)} – {format_price(upper)} (± MAE)")
 
                 # Explainability
                 st.subheader("What's driving this price?")
                 driver_text = []
                 driver_text.append(f"**Size:** {size_sqft:,.0f} sqft is the strongest price driver in our model.")
                 if location_medians is not None and location in location_medians.index:
-                    loc_med = location_medians.loc[location] / 1e6
-                    driver_text.append(f"**Location:** {location} — median ~{loc_med:.0f}M KES in our data.")
+                    loc_med = location_medians.loc[location]
+                    driver_text.append(f"**Location:** {location} — median {format_price(loc_med)} in our data.")
                 else:
                     driver_text.append(f"**Location:** {location} — premium area.")
                 driver_text.append(f"**Rooms:** {bedrooms} bed, {bathrooms} bath — more rooms typically add value.")
@@ -233,25 +277,40 @@ elif nav == "Market Insights":
 
     with col1:
         st.subheader("Top 5 Price Drivers")
-        for i, (name, _, desc) in enumerate(TOP_DRIVERS, 1):
-            st.markdown(f"**{i}. {name}**  \n{desc}")
-            st.caption("")
+        if top_drivers:
+            for i, (feat, imp) in enumerate(top_drivers, 1):
+                label = feat.replace("_", " ").title()
+                st.markdown(f"**{i}. {label}** ({imp*100:.1f}% importance)")
+        else:
+            st.caption("Feature importance not available for this model.")
 
     with col2:
         st.subheader("Location Premiums (Median Price)")
         if location_medians is not None:
             top_locs = location_medians.head(10)
             for loc, med in top_locs.items():
-                st.caption(f"**{loc}:** KES {med:,.0f}M")
+                st.caption(f"**{loc}:** {format_price(med)}")
         else:
             st.caption("Data not loaded.")
 
         st.divider()
         st.subheader("Model Performance")
-        st.caption("**Best model:** Random Forest")
-        st.caption("**R²:** 0.36 (explains 36% of price variance)")
-        st.caption("**MAE:** ~241M KES (avg error)")
-        st.caption("**Baseline (Linear Reg):** R² 0.24")
+        st.caption(f"**Best model:** {best_model_display}")
+        st.caption(f"**R²:** {best_r2:.2f} (explains {max(0, best_r2)*100:.0f}% of price variance)")
+        st.caption(f"**MAE:** {format_price(MAE)} (avg error)")
+        if comparison_df is not None:
+            lr = comparison_df[comparison_df["Model"].str.contains("Linear", case=False, na=False)]
+            if not lr.empty:
+                st.caption(f"**Baseline (Linear Reg):** R² {float(lr['R2'].iloc[0]):.2f}")
+
+    if comparison_df is not None and len(comparison_df) > 0:
+        st.divider()
+        st.subheader("Model Comparison (from notebook)")
+        st.dataframe(
+            comparison_df[["Model", "MAE", "R2"]].rename(columns={"MAE": "MAE (KES)", "R2": "R²"}),
+            use_container_width=True,
+            hide_index=True,
+        )
 
     st.divider()
     st.subheader("Feature Importance")
