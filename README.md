@@ -1,124 +1,81 @@
 # Nairobi House Price Prediction
 
-A prop-tech MVP built in a 6-day intensive sprint — from raw data to a deployed pricing app.
-Built as part of the **LTLab Fellowship 6-Day Intensive Sprint**.
+A **property valuation app** for Nairobi: get price estimates and market insights from real listings. Built in 6 days (LTLab Fellowship sprint) — scraping → cleaning → modeling → app and dashboard.
 
 ---
 
-## Sprint Progress
+## Try it
+
+- **Live app:** Deploy from this repo on [Streamlit Community Cloud](https://share.streamlit.io) (see [DEPLOY.md](DEPLOY.md)).
+- **Locally:** `streamlit run app/app.py` (from the project root; requires Python, see [Run it yourself](#run-it-yourself)).
+
+**In the app:** Predict price (location, size, rooms, amenities), explore Market Insights and a 4-tab Dashboard (median price by location, monthly trend, price per sqft, amenity impact), and view a Nairobi map.
+
+---
+
+## What’s in the box
+
+| Deliverable | Description |
+|-------------|--------------|
+| **Data** | Listings from BuyRentKenya (scraped, cleaned, feature-engineered). |
+| **Model** | Best performer: XGBoost (R² ~0.26, MAE ~125K KES). Comparison with Linear Regression and Random Forest in notebooks. |
+| **App** | Streamlit: price predictor, top drivers, location premiums, model comparison. |
+| **Dashboard** | Median price by location, monthly trend, price per sqft, amenity impact. |
+
+---
+
+## Sprint at a glance
 
 | Day | Focus | Status |
 |-----|-------|--------|
-| **Day 1** | Data Collection & Structuring | ✅ Complete |
-| **Day 2** | Data Cleaning & Feature Engineering | ✅ Complete |
-| **Day 3** | EDA & Baseline Model | Pending |
-| **Day 4** | Model Improvement & Explainability | Pending |
-| **Day 5** | Pricing App Deployment | Pending |
-| **Day 6** | Dashboard & Presentation | Pending |
+| 1 | Data collection (BuyRentKenya scraper) | ✅ |
+| 2 | Cleaning & feature engineering | ✅ |
+| 3 | EDA & baseline model | ✅ |
+| 4 | Model improvement (RF, XGBoost) & explainability | ✅ |
+| 5 | Pricing app (Streamlit) | ✅ |
+| 6 | Dashboard & presentation | ✅ |
 
 ---
 
-## Project Structure
+## Run it yourself
 
-```
-NairobiHousePred/
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-├── data/
-│   ├── raw_listings.csv        # 628 scraped listings
-│   ├── clean_listings.csv      # Cleaned & feature-engineered dataset
-│   ├── data_dictionary.md      # Column definitions & statistics
-│   └── eda_visuals.png         # EDA charts
-├── scrapers/
-│   ├── base_scraper.py         # Base class with retry logic
-│   └── brk_scraper.py          # BuyRentKenya scraper
-└── notebooks/
-    └── 01_data_cleaning.ipynb  # Cleaning & feature engineering
-```
-
----
-
-## Quick Start
+**Prerequisites:** Python 3.10+, and `data/model.pkl`, `data/clean_listings.csv`, `data/model_comparison.csv` in the repo (or from running the notebooks).
 
 ```bash
-# Clone & build
 git clone https://github.com/25thOliver/Nairobi-House-Price-Prediction.git
-cd NairobiHousePred
-docker-compose build && docker-compose up -d
+cd Nairobi-House-Price-Prediction
+pip install -r requirements.txt
+streamlit run app/app.py
+```
 
-# Enter container
+**With Docker (includes scraping & Jupyter):**
+
+```bash
+docker-compose up -d
 docker-compose exec scraper bash
-
-# Collect data (Day 1)
-python -m scrapers.brk_scraper
-
-# Launch Jupyter (Day 2)
-jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token=''
-# Open: http://localhost:8888
+# Inside container: streamlit run app/app.py  OR  jupyter notebook ...
 ```
 
 ---
 
-## Day 1 — Data Collection
+## Project layout
 
-**Source:** BuyRentKenya.com
-
-| Metric | Value |
-|--------|-------|
-| Total scraped | 705 listings |
-| After deduplication | **628 unique listings** |
-| Price range | 370K – 15.5B KES |
-| Median price | 130M KES |
-| Locations | 25+ Nairobi neighborhoods |
-| Property types | 10 types |
-
-**Scraping Architecture:**
-- `base_scraper.py` — HTTP handling, retry logic (3 attempts), user-agent rotation, 2s rate limiting
-- `brk_scraper.py` — Scrapes structured listing cards directly
+```
+├── app/app.py              # Streamlit app + dashboard
+├── data/                   # clean_listings.csv, model.pkl, model_comparison.csv
+├── notebooks/              # 01 cleaning, 02 EDA & baseline, 03 model improvement
+├── scrapers/               # BuyRentKenya scraper (base + brk)
+├── requirements.txt
+├── DEPLOY.md               # How to put the app online
+└── STREAMLIT_CLOUD_CHECKLIST.md
+```
 
 ---
 
-## Day 2 — Data Cleaning & Feature Engineering
+## Tech stack
 
-**Notebook:** `notebooks/01_data_cleaning.ipynb`
-
-**Cleaning steps:**
-- Removed duplicates
-- Replaced missing `size_sqft` (0.0 → NaN → median imputation per property type)
-- Standardized location names (e.g. `Nairobi Central` → `Nairobi CBD`)
-- Reclassified `Other` property types using bedrooms & size heuristics
-- Removed price outliers using IQR method (5th–95th percentile)
-
-**New features created:**
-
-| Feature | Description |
-|---------|-------------|
-| `price_per_sqft` | Price ÷ size |
-| `amenity_score` | Count of amenities (0–9) |
-| `month` | Extracted from listing date |
-| `has_parking`, `has_pool`, `has_gym`, `has_security`, `has_garden` | Boolean amenity flags |
-| `is_land` | True if Plot or Land |
-
-**Output:** `data/clean_listings.csv` + `data/eda_visuals.png`
+Python 3.11 · Pandas, NumPy · Scikit-learn, XGBoost · Matplotlib · Streamlit · Docker (optional)
 
 ---
 
-## Tech Stack
-
-| Layer | Tools |
-|-------|-------|
-| Language | Python 3.11 |
-| Scraping | BeautifulSoup4, Requests |
-| Data | Pandas, NumPy |
-| Visualization | Matplotlib, Seaborn |
-| Notebooks | Jupyter |
-| Container | Docker, Docker Compose |
-| Version Control | Git, GitHub |
-
----
-
-## Author
-
-**Oliver** — LTLab Fellowship, Cohort 2026
-GitHub: [@25thOliver](https://github.com/25thOliver)
+**Oliver** — [@25thOliver](https://github.com/25thOliver) · LTLab Fellowship 2026
