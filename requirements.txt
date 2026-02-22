@@ -1,4 +1,4 @@
-# Web Scraping (Day 1) — lxml omitted so Streamlit Cloud can install without system libs; scrapers use html.parser
+# Web Scraping (Day 1). No lxml (Streamlit Cloud has no libxml2); scrapers use html.parser.
 requests==2.31.0
 beautifulsoup4==4.12.3
 selenium==4.16.0
