@@ -170,6 +170,9 @@ if __name__ == "__main__":
             
             today = datetime.now().strftime('%Y-%m-%d')
             for r in results:
+                # Remove title, it's not in the data dictionary
+                if 'title' in r:
+                    del r['title']
                 # Fill missing fields required by the dictionary
                 r['amenities'] = ''  # We aren't scraping amenities explicitly yet
                 r['listing_date'] = today
