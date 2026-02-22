@@ -46,6 +46,30 @@ class BRKScraper(BaseScraper):
         except Exception:
             return 0.0
 
+    def _extract_amenities(self, text: str) -> str:
+        """Extract common amenities from listing text"""
+        keywords = {
+            'pool': ['pool', 'swimming'],
+            'gym': ['gym', 'fitness'],
+            'parking': ['parking', 'garage', 'carport'],
+            'security': ['security', 'guard', 'cctv', 'electric fence', 'alarm', 'gated community'],
+            'garden': ['garden', 'yard', 'lawn'],
+            'generator': ['generator', 'backup power'],
+            'borehole': ['borehole', 'water tank'],
+            'staff_quarters': ['staff quarters', 'dsq', 'servant', 'sq'],
+            'aircon': ['aircon', 'ac', 'air conditioning'],
+            'internet': ['internet', 'fibre', 'wifi']
+        }
+        
+        found = set()
+        text_lower = text.lower()
+        
+        for amenity, terms in keywords.items():
+            if any(term in text_lower for term in terms):
+                found.add(amenity.replace('_', ' ').capitalize())
+                
+        return ', '.join(sorted(found))
+
     def scrape_listings(self, max_pages: int = 10) -> List[Dict]:
         """Scrape properties up to max_pages"""
         all_listings = []
@@ -134,6 +158,9 @@ class BRKScraper(BaseScraper):
                     elif 'house' in l_text:
                         listing_data['property_type'] = 'House'
 
+                    # Extract amenities from text
+                    listing_data['amenities'] = self._extract_amenities(full_text)
+
                     if listing_data['price_kes'] > 0:
                         all_listings.append(listing_data)
                         
@@ -174,7 +201,8 @@ if __name__ == "__main__":
                 if 'title' in r:
                     del r['title']
                 # Fill missing fields required by the dictionary
-                r['amenities'] = ''  # We aren't scraping amenities explicitly yet
+                if 'amenities' not in r:
+                    r['amenities'] = ''
                 r['listing_date'] = today
                 writer.writerow(r)
                 
