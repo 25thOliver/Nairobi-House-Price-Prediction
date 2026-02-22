@@ -32,8 +32,7 @@ NairobiHousePred/
 │   └── eda_visuals.png         # EDA charts
 ├── scrapers/
 │   ├── base_scraper.py         # Base class with retry logic
-│   ├── jiji_scraper.py         # Jiji.co.ke multi-category scraper
-│   └── multi_source_scraper.py # Aggregator (extensible to more sites)
+│   └── brk_scraper.py          # BuyRentKenya scraper
 └── notebooks/
     └── 01_data_cleaning.ipynb  # Cleaning & feature engineering
 ```
@@ -52,7 +51,7 @@ docker-compose build && docker-compose up -d
 docker-compose exec scraper bash
 
 # Collect data (Day 1)
-python -m scrapers.multi_source_scraper
+python -m scrapers.brk_scraper
 
 # Launch Jupyter (Day 2)
 jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token=''
@@ -63,7 +62,7 @@ jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookAp
 
 ## Day 1 — Data Collection
 
-**Source:** Jiji.co.ke (Houses & Apartments + Land & Plots)
+**Source:** BuyRentKenya.com
 
 | Metric | Value |
 |--------|-------|
@@ -76,8 +75,7 @@ jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookAp
 
 **Scraping Architecture:**
 - `base_scraper.py` — HTTP handling, retry logic (3 attempts), user-agent rotation, 2s rate limiting
-- `jiji_scraper.py` — Multi-category scraping, regex extraction, URL-based deduplication
-- `multi_source_scraper.py` — Aggregates sources, removes duplicates by (price, location, bedrooms, type)
+- `brk_scraper.py` — Scrapes structured listing cards directly
 
 ---
 
