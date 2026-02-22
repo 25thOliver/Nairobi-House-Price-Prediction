@@ -120,7 +120,7 @@ with st.sidebar:
 
     st.divider()
     st.caption("**Model:** Random Forest")
-    st.caption("**Data:** 600+ listings from Jiji.co.ke")
+    st.caption("**Data:** 600+ listings from BuyRentKenya.com")
     st.caption("**R²:** ~0.36 | **MAE:** ~241M KES")
 
 # Main: Predict Price
